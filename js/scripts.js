@@ -51,6 +51,21 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    //play video
+    const videos = document.querySelectorAll('video');
+    
+    videos.forEach(video => {
+        // Try to play the video on load
+        video.play().catch(error => {
+            console.log('Autoplay was prevented:', error);
+        });
+        
+        // Ensure the video plays when in view or on user interaction
+        video.addEventListener('click', function() {
+            video.play();
+        });
+    });
+
 });
 
 // email
