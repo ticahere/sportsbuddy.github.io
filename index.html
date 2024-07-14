@@ -15,15 +15,15 @@
         }
 
         #bg-video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        transform: translate(-50%, -50%);
-        background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            background-size: cover;
         }
         .customer-logo {
             width: 30px;
@@ -37,14 +37,24 @@
             padding: 0.75rem 1rem !important;
         }
         .social-link {
+            min-height: 40px; 
+            min-width: 40px; 
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             text-decoration: none;
-            color: white;
-            padding-top: 0.75rem;
-            margin-right:2rem;
+            color: inherit;
+            padding-top: 3rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+            font-size: small;
         }
+        .social-icon {
+            width: 50%;
+            margin-bottom: 5px; 
+        }
+
         .scroll-snap {
             scroll-behavior: smooth;
         }
@@ -237,11 +247,11 @@
                     </div>
             
                     <!-- Carousel controls -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev" style="left: -5%;">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev" >
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next" style="right: -5%;">
+                    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next" >
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -410,35 +420,36 @@
         </section>
         <!-- Contact-->
         <section class="contact-section bg-black px-5">
-            <div class="row mx-4 p-4 px-lg-5">
+            <div class="row d-flex p-4 px-lg-5  justify-content-center">
                 <div class="col-xl-6 col-lg-6 text-white text-start">
                     <h2 class="follow-heading">Follow Sportsbuddy.ai</h2>
-                    <div class="social d-flex justify-content-start">
-                        <a class="mx-2 text-center" href="https://www.instagram.com/sportsbuddyai/" target="_blank">
-                            <img src="images/Instagram.svg" alt="Instagram" width="50%" >
+                    <div class="social d-flex flex-wrap justify-content-start">
+                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.instagram.com/sportsbuddyai/" target="_blank">
+                            <img src="images/Instagram.svg" alt="Instagram" class="social-icon">Instagram
                         </a>
-                        <a class="mx-2 text-center" href="https://x.com/sportsbuddyai" target="_blank">
-                            <img src="images/Twitter.svg" alt="X"  width="50%" >
+                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://x.com/sportsbuddyai" target="_blank">
+                            <img src="images/Twitter.svg" alt="X" class="social-icon">X
                         </a>
-                        <a class="mx-2 text-center" href="https://www.linkedin.com/company/sportsbuddyai/" target="_blank">
-                            <img src="images/LinkedIn.svg" alt="LinkedIn" width="50%" >
+                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.linkedin.com/company/sportsbuddyai/" target="_blank">
+                            <img src="images/LinkedIn.svg" alt="LinkedIn" class="social-icon">LinkedIn
                         </a>
-                        <a class="mx-2 text-center" href="https://www.youtube.com/channel/UCiO-STU3zRqoNFsB5exU-jg" target="_blank">
-                            <img src="images/YouTube.svg" alt="YouTube"  width="50%" >
+                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.youtube.com/channel/UCiO-STU3zRqoNFsB5exU-jg" target="_blank">
+                            <img src="images/YouTube.svg" alt="YouTube" class="social-icon">YouTube
                         </a>
-                        <a class="mx-2 text-center" href="https://www.tiktok.com/@sportsbuddy.ai" target="_blank">
-                            <img src="images/TikTok.svg" alt="TikTok"  width="50%" >
+                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.tiktok.com/@sportsbuddy.ai" target="_blank">
+                            <img src="images/TikTok.svg" alt="TikTok" class="social-icon">TikTok
                         </a>
                     </div>
+                    
                 </div>
-                <div class="col-xl-6 col-lg-6 text-white">
+                <div class="col-xl-4 col-lg-6 text-white">
                     <h2 class="text-start">Join User Community</h2>
                     <div class="social d-flex justify-content-start">
                         <a class="social-link" href="https://discord.gg/9y8J3pA4" target="_blank">
-                            <img src="images/Discord.svg" alt="Instagram" width="50%" >Discord
+                            <img src="images/Discord.svg" alt="Instagram"class="social-icon" >Discord
                         </a>
                         <a class="social-link" href="https://www.facebook.com/profile.php?id=61554477694884" target="_blank">
-                            <img src="images/Facebook.svg" alt="X" width="50%" >Facebook
+                            <img src="images/Facebook.svg" alt="X" class="social-icon">Facebook
                         </a>
                     </div>
                 </div>
