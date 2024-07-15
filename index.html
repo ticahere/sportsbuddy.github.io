@@ -1,69 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        .arrow-btn {
-            font-size: 3rem;
-        }
-        .video-background {
-        position: absolute;
-        top: -15%;
-        left: 0;
-        height: 140%;
-        width: 200%;
-        overflow: hidden;
-        z-index: -1;
-        }
-
-        #bg-video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            transform: translate(-50%, -50%);
-            background-size: cover;
-        }
-        .customer-logo {
-            width: 30px;
-            height: auto;
-            vertical-align: middle;
-            margin-right: 10px; 
-        }
-        .nav-btn {
-            margin-left: 3rem;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-            padding: 0.75rem 1rem !important;
-        }
-        .social-link {
-            min-height: 40px; 
-            min-width: 40px; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: inherit;
-            padding-top: 3rem;
-            margin-right: 2rem;
-            margin-bottom: 2rem;
-            font-size: small;
-        }
-        .social-icon {
-            width: 50%;
-            margin-bottom: 5px; 
-        }
-
-        .scroll-snap {
-            scroll-behavior: smooth;
-        }
-        .scroll-snap section {
-            scroll-snap-align: start;
-            scroll-snap-stop: always;
-        }
-    </style>
+    
+   
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -71,6 +9,9 @@
         <meta name="author" content="" />
         <title>SportsBuddy.ai</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -78,8 +19,73 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .arrow-btn {
+                font-size: 3rem;
+            }
+            .video-background {
+            position: absolute;
+            top: -15%;
+            left: 0;
+            height: 140%;
+            width: 200%;
+            overflow: hidden;
+            z-index: -1;
+            }
+    
+            #bg-video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                transform: translate(-50%, -50%);
+                background-size: cover;
+            }
+            .customer-logo {
+                width: 30px;
+                height: auto;
+                vertical-align: middle;
+                margin-right: 10px; 
+            }
+            .nav-btn {
+                margin-left: 3rem;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                padding: 0.75rem 1rem !important;
+            }
+            .social-link {
+                min-height: 40px; 
+                min-width: 40px; 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: inherit;
+                padding-top: 3rem;
+                margin-right: 2rem;
+                margin-bottom: 2rem;
+                font-size: small;
+            }
+            .social-icon {
+                width: 50%;
+                margin-bottom: 5px; 
+            }
+    
+            .scroll-snap {
+                scroll-behavior: smooth;
+            }
+            .scroll-snap section {
+                scroll-snap-align: start;
+                scroll-snap-stop: always;
+            }
+        </style>
     </head>
-    <body id="home" class="scroll-snap">
+    <body id="home" class="scroll-snap" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+        
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -95,7 +101,7 @@
                         <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
                         <li class="nav-item"><a class="nav-link" href="#client">Clients</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                        <li class="nav-item"><a class="btn btn-primary nav-btn " href="https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&amp;month=2024-07" target="_blank">Request Demo</a></li>
+                        <li class="nav-item"><a class="btn btn-primary nav-btn" href="https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&amp;month=2024-07" target="_blank">Request Demo</a></li>
                     </ul>
                 </div>
             </div>
@@ -457,11 +463,11 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; SportsBuddy.ai 2024</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-       
+        
     </body>
 </html>
