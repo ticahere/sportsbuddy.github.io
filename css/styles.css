@@ -11304,19 +11304,20 @@ z-index: -1;
   padding-bottom: 100px;
 }
 .blog-post header {
-  padding: 10rem 0;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
   position: relative;
   width: 100%;
-  height: 20vh;
-  min-height: 30rem;
+  height: auto;
   overflow: hidden;
   color: white;
   background-color:rgba(0, 0, 0, 0.3);
-  background-size: 100%;
+  background-size: auto;
   background-position-y: 50%;
   background-blend-mode: darken;
   margin-bottom: 5rem;
 }
+
 .blog-post .post-heading-character {
   font-size: 5rem;
 }
