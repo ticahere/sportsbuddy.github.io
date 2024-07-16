@@ -67,22 +67,15 @@ function showSuccessMessage() {
         submitted = false;
     }
 }
-document.querySelector('form').addEventListener('submit', function(event) {
-    var emailInput = document.getElementById('emailAddress');
-    var successMessage = document.getElementById('submitSuccessMessage');
-    var errorMessage = document.getElementById('submitErrorMessage');
-    var emailError = document.getElementById('emailError');
 
-    if (!emailInput.checkValidity()) {
-        emailError.style.display = 'block';
-        event.preventDefault();
-    } else {
-        emailError.style.display = 'none';
-        successMessage.style.display = 'block';
-        errorMessage.style.display = 'none';
-        setTimeout(function() {
-            emailInput.value = '';
-            successMessage.style.display = 'none';
-        }, 5000); // Hide after 5 seconds
-    }
+document.querySelectorAll('.image-row img').forEach(img => {
+    img.addEventListener('click', () => {
+        // Toggle the enlarged class on the clicked image
+        img.classList.toggle('enlarged');
+    });
+
+    img.addEventListener('mouseleave', () => {
+        // Remove the enlarged class when the mouse leaves the image
+        img.classList.remove('enlarged');
+    });
 });

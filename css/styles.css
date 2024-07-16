@@ -40,6 +40,7 @@
   --bs-info: #1cabc4;
   --bs-warning: #e4c662;
   --bs-danger: #a16468;
+  --bs-tag: #e18600;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-black: #000;
@@ -11194,7 +11195,7 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
 }
 .contact-section .card {
@@ -11223,4 +11224,157 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+/* customized css for UI components */
+.arrow-btn {
+  font-size: 3rem;
+}
+
+.article-tag {
+  background-color:var(--bs-tag); 
+  color: white; 
+  padding: 3px 15px; 
+  margin-right: 0.25rem;
+  border-radius: 4rem; 
+  font-size: small;
+  display: inline-block; 
+}
+.video-background {
+position: absolute;
+top: -15%;
+left: 0;
+height: 140%;
+width: 200%;
+overflow: hidden;
+z-index: -1;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+}
+.customer-logo {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px; 
+}
+.nav-btn {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem !important;
+}
+.social-link {
+  min-height: 40px; 
+  min-width: 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  padding-top: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  font-size: small;
+}
+.social-icon {
+  width: 2rem;
+  margin-bottom: 5px; 
+}
+
+.scroll-snap {
+  scroll-behavior: smooth;
+}
+.scroll-snap section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* customized css for blog post*/
+.blog-post article {
+  padding-bottom: 100px;
+}
+.blog-post header {
+  padding: 10rem 0;
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  min-height: 30rem;
+  overflow: hidden;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.3);
+  background-size: 100%;
+  background-position-y: 50%;
+  background-blend-mode: darken;
+  margin-bottom: 5rem;
+}
+.blog-post .post-heading-character {
+  font-size: 5rem;
+}
+.blog-post .post-heading {
+  font-family: "Varela", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.4rem;
+}
+.blog-post .meta {
+  font-size: 1rem;
+}
+.blog-post .section-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 2.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-post .caption {
+  font-size: 0.875rem;
+  font-style: italic;
+  display: block;
+  margin: 0;
+  padding: 0.625rem;
+  text-align: center;
+}
+.blog-post .blockquote {
+  color: var(--bs-primary) !important;
+  font-size: 1.25rem;
+  margin: 3rem 3rem;
+  font-style: italic;
+  border-left: 4px solid var(--bs-primary); 
+  padding-left: 1rem; 
+}
+.rounded-img{
+  padding: 0.5rem;
+  border-radius: 15px; /* Adjust the value to get the desired roundness */
+  position: relative;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.image-row img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out, z-index 0.3s;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 15px; /* Adjust the value to get the desired roundness */
+  position: relative;
+  z-index: 0;
+}
+
+.image-row img.enlarged {
+  transform: scale(1.6);
+  z-index: 10;
 }
