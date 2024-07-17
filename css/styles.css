@@ -11379,3 +11379,7 @@ z-index: -1;
   transform: scale(1.6);
   z-index: 10;
 }
+
+.clickable-div {
+  cursor: pointer;
+}
