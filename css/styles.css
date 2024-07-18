@@ -11312,7 +11312,7 @@ z-index: -1;
   overflow: hidden;
   color: white;
   background-color:rgba(0, 0, 0, 0.3);
-  background-size: auto;
+  background-size: cover;
   background-position-y: 50%;
   background-blend-mode: darken;
   margin-bottom: 5rem;
