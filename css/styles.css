@@ -11336,6 +11336,12 @@ z-index: -1;
   margin-top: 2.75rem;
   margin-bottom: 0.75rem;
 }
+.blog-post .section-subtitle {
+  letter-spacing: initial;
+  font-weight: 200;
+  padding: 1rem 0;
+  color:var(--bs-orange);
+}
 
 .blog-post .caption {
   font-size: 0.875rem;
