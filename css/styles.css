@@ -11338,7 +11338,7 @@ z-index: -1;
 }
 .blog-post .section-subtitle {
   letter-spacing: initial;
-  font-weight: 200;
+  font-weight: 300;
   padding: 1rem 0;
   color:var(--bs-orange);
 }
