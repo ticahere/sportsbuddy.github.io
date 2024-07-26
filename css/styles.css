@@ -11236,8 +11236,14 @@ body {
   padding: 3px 15px; 
   margin-right: 0.25rem;
   border-radius: 4rem; 
+  height: 1.6rem;
   font-size: small;
   display: inline-block; 
+  text-align: end;
+}
+.time-tag {
+  color: var(--bs-gray-600);
+  font-size: small;
 }
 .video-background {
 position: absolute;
