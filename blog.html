@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+   
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SportsBuddy Blog</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            // Function to load the head template
+            function loadHead() {
+                fetch('head.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.head.appendChild(document.importNode(templateContent, true));
+                });
+            }
+
+            // Function to load the header template
+            function loadHeader() {
+                fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.body.insertBefore(document.importNode(templateContent, true), document.body.firstChild);
+                });
+            }
+
+            // Function to load the footer template
+            function loadFooter() {
+                fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.body.appendChild(document.importNode(templateContent, true));
+                });
+            }
+
+            // Load head, header, and footer when the window loads
+            window.onload = function() {
+                loadHead();
+                loadHeader();
+                loadFooter();
+            };
+        </script>
+        
+        <style>
+            /* Apply the background to the header */
+            header {
+                height: 200px;
+                background: linear-gradient(45deg,rgba(150, 130, 210, 0.8),  rgba(8, 207, 194, 0.8),  rgba(255, 248, 189, 0.8));
+                background-size: 400% 400%;
+                animation: gradientAnimation 15s ease infinite;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                color: white;
+                font-family: 'Varela Round', sans-serif;
+                text-align: center;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body id="home" class="blog-post" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+        
+        <!-- Header -->
+        <header>
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class=" justify-content-center w-100">
+                    <div class="text-center">
+                        <h1 class="mx-auto mt-3 text-uppercase mb-3">SportsBuddy Blog</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Section Content-->
+        <section class="blog-section">
+            <div class="container text-lg-left">
+                 <!-- Filter Buttons -->
+                <div class="row mb-4 filter-btn-container">
+                    <div class="col">
+                        <button class="btn filter-btn active" data-filter="all">All</button>
+                        <button class="btn filter-btn" data-filter="case-study">Case Studies</button>
+                        <button class="btn filter-btn" data-filter="press">Press</button>
+                        <button class="btn filter-btn" data-filter="research">Research</button>
+                    </div>
+                </div>
+
+                <div class="container mt-5" style="margin-bottom: 100px ;">
+                    <div class="row" id="blog-container">
+                        <!-- Blog previews will be loaded here -->
+                    </div>
+                </div>
+            </div>
+            </section>
+        
+        <!-- Footer-->
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            // Function to get query parameters from the URL
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            // Load all blog previews dynamically with a responsive layout
+            function loadBlogPreviews() {
+                fetch('blog-previews.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        const container = document.getElementById('blog-container');
+                        const tempDiv = document.createElement('div');
+                        tempDiv.innerHTML = data;
+                        const previews = Array.from(tempDiv.querySelectorAll('.blog-preview'));
+
+                        // Reverse the order of previews
+                        previews.reverse();
+
+                        previews.forEach((preview, index) => {
+                            const colDiv = document.createElement('div');
+                            colDiv.style.marginBottom = '30px'; 
+                            colDiv.appendChild(preview);
+                            container.appendChild(colDiv);
+                        });
+
+                        // Attach event listeners after previews are loaded
+                        attachFilterListeners();
+
+                        // Apply filter based on URL parameter if present
+                        const initialFilter = getQueryParam('filter');
+                        if (initialFilter) {
+                            filterBlogPreviews(initialFilter);
+                            document.querySelector(`.filter-btn[data-filter="${initialFilter}"]`).classList.add('active');
+                        }
+                    });
+            }
+
+            // Function to filter blog previews based on category
+            function filterBlogPreviews(category) {
+                const previews = document.querySelectorAll('.blog-preview');
+                previews.forEach(preview => {
+                    if (category === 'all' || preview.dataset.category === category) {
+                        preview.parentElement.style.display = 'block'; // Show the matching previews
+                    } else {
+                        preview.parentElement.style.display = 'none'; // Hide the non-matching previews
+                    }
+                });
+
+                // Update button states
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.getAttribute('data-filter') === category) {
+                        btn.classList.add('active');
+                    }
+                });
+            }
+
+            // Function to attach event listeners to filter buttons
+            function attachFilterListeners() {
+                const filterButtons = document.querySelectorAll('.filter-btn');
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        this.classList.add('active');
+                        const category = this.getAttribute('data-filter');
+                        filterBlogPreviews(category);
+                        // Update the URL without reloading the page
+                        const newUrl = `${window.location.pathname}?filter=${category}`;
+                        window.history.pushState({ path: newUrl }, '', newUrl);
+                    });
+                });
+            }
+
+            // Ensure the script runs after the DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', function() {
+                loadBlogPreviews(); // Load previews when the page is ready
+            });
+        </script>
+    </body>
+</html>

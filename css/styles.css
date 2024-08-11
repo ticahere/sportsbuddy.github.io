@@ -2855,8 +2855,8 @@ textarea.form-control-lg {
   --bs-btn-bg: #64a19d;
   --bs-btn-border-color: #64a19d;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #558985;
-  --bs-btn-hover-border-color: #50817e;
+  --bs-btn-hover-bg: #19635d;
+  --bs-btn-hover-border-color: #19635d;
   --bs-btn-focus-shadow-rgb: 123, 175, 172;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #50817e;
@@ -2869,19 +2869,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #7464a1;
-  --bs-btn-border-color: #7464a1;
+  --bs-btn-bg:#ec9600;
+  --bs-btn-border-color: #ec9600;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #635589;
-  --bs-btn-hover-border-color: #5d5081;
+  --bs-btn-hover-bg: #ba7600;
+  --bs-btn-hover-border-color: #ba7600;
   --bs-btn-focus-shadow-rgb: 137, 123, 175;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #5d5081;
-  --bs-btn-active-border-color: #574b79;
+  --bs-btn-active-bg: #ba7600;
+  --bs-btn-active-border-color: #ba7600;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #7464a1;
-  --bs-btn-disabled-border-color: #7464a1;
+  --bs-btn-disabled-bg: #FFA80F;
+  --bs-btn-disabled-border-color: #FFA80F;
 }
 
 .btn-success {
@@ -3022,10 +3022,11 @@ textarea.form-control-lg {
 
 .btn-outline-primary {
   --bs-btn-color: #64a19d;
+  --bs-btn-bg: #ffffffd2;
   --bs-btn-border-color: #64a19d;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #64a19d;
-  --bs-btn-hover-border-color: #64a19d;
+  --bs-btn-hover-bg: #19635d;
+  --bs-btn-hover-border-color: #19635d;
   --bs-btn-focus-shadow-rgb: 100, 161, 157;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #64a19d;
@@ -3038,19 +3039,20 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #7464a1;
-  --bs-btn-border-color: #7464a1;
+  --bs-btn-color: #e69201;
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: #e69201;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #7464a1;
-  --bs-btn-hover-border-color: #7464a1;
+  --bs-btn-hover-bg: #e69201;
+  --bs-btn-hover-border-color: #e69201;
   --bs-btn-focus-shadow-rgb: 116, 100, 161;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #7464a1;
-  --bs-btn-active-border-color: #7464a1;
+  --bs-btn-active-bg: #e69201;
+  --bs-btn-active-border-color: #e69201;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #7464a1;
+  --bs-btn-disabled-color: #e69201;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #7464a1;
+  --bs-btn-disabled-border-color: #e69201;
   --bs-gradient: none;
 }
 
@@ -3297,7 +3299,7 @@ textarea.form-control-lg {
   --bs-dropdown-spacer: 0.125rem;
   --bs-dropdown-font-size: 1rem;
   --bs-dropdown-color: #212529;
-  --bs-dropdown-bg: #fff;
+  --bs-dropdown-bg: #ffffffea;
   --bs-dropdown-border-color: var(--bs-border-color-translucent);
   --bs-dropdown-border-radius: 0.375rem;
   --bs-dropdown-border-width: 1px;
@@ -3307,12 +3309,12 @@ textarea.form-control-lg {
   --bs-dropdown-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   --bs-dropdown-link-color: #212529;
   --bs-dropdown-link-hover-color: #1e2125;
-  --bs-dropdown-link-hover-bg: #e9ecef;
+  --bs-dropdown-link-hover-bg: #65a3a091;
   --bs-dropdown-link-active-color: #fff;
   --bs-dropdown-link-active-bg: #64a19d;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
-  --bs-dropdown-item-padding-y: 0.25rem;
+  --bs-dropdown-item-padding-y: 0.4rem;
   --bs-dropdown-header-color: #6c757d;
   --bs-dropdown-header-padding-x: 1rem;
   --bs-dropdown-header-padding-y: 0.5rem;
@@ -3328,8 +3330,8 @@ textarea.form-control-lg {
   list-style: none;
   background-color: var(--bs-dropdown-bg);
   background-clip: padding-box;
-  border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
-  border-radius: var(--bs-dropdown-border-radius);
+  /* border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color); */
+  /* border-radius: var(--bs-dropdown-border-radius); */
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -3529,6 +3531,7 @@ textarea.form-control-lg {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  padding-left: 1.5rem;
 }
 .dropdown-item:hover, .dropdown-item:focus {
   color: var(--bs-dropdown-link-hover-color);
@@ -3872,6 +3875,11 @@ textarea.form-control-lg {
 }
 .navbar-nav .dropdown-menu {
   position: static;
+}
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    margin-bottom: 2rem; 
+  }
 }
 
 .navbar-text {
@@ -7119,6 +7127,9 @@ textarea.form-control-lg {
 
 .opacity-75 {
   opacity: 0.75 !important;
+}
+.opacity-80 {
+  opacity: 0.85 !important;
 }
 
 .opacity-100 {
@@ -11074,7 +11085,11 @@ body {
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  border: 0;
+  /* border: 0; */
+}
+
+.btn-sm {
+  padding: 0.75rem 1rem;
 }
 
 .masthead {
@@ -11224,6 +11239,7 @@ body {
 
 .footer {
   padding: 5rem 0;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0.8) 100%);
 }
 /* customized css for UI components */
 .arrow-btn {
@@ -11240,6 +11256,9 @@ body {
   font-size: small;
   display: inline-block; 
   text-align: end;
+}
+.press-tag {
+  background-color:var(--bs-cyan); 
 }
 .time-tag {
   color: var(--bs-gray-600);
@@ -11273,10 +11292,20 @@ z-index: -1;
   margin-right: 10px; 
 }
 .nav-btn {
-  margin-left: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-left: 2rem  !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
   padding: 0.75rem 1rem !important;
+}
+
+@media (max-width: 991.98px) {
+  .nav-btn {
+    margin: 0rem; 
+  }
+  .nav-btn {
+    margin-top: 0.5rem !important;
+    margin-left: 0rem  !important;
+  }
 }
 .social-link {
   min-height: 40px; 
@@ -11304,7 +11333,31 @@ z-index: -1;
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+/* customized css for blog page */
+#blog-container h2{
+  /* font-size: 1.5rem; */
+}
+.blog-section .filter-btn-container {
+  text-align: center; 
+} 
+.blog-section .filter-btn {
+  border: none; /* Remove the border */
+  background: none; /* Remove background color */
+  font-weight: normal; /* Default font weight */
+  color: var(--bs-gray-dark);
+  margin: 0 10px; /* Add some spacing between buttons */
+  padding: 8px 16px; /* Add some padding for better click area */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: color 0.3s, font-weight 0.3s; /* Smooth transition for color and font-weight */
+}
+.blog-section .filter-btn.active {
+  font-weight: bold; /* Bold font for active state */
+  color: var(--bs-success);
+}
 
+.blog-section .filter-btn:hover {
+  color: var(--bs-success);
+}
 /* customized css for blog post*/
 .blog-post article {
   padding-bottom: 100px;

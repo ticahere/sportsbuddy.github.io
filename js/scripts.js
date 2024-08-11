@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
@@ -43,14 +42,63 @@ window.addEventListener('DOMContentLoaded', event => {
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
     responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+        responsiveNavItem.addEventListener('click', (event) => {
+            const dropdownToggle = event.target.closest('.dropdown-toggle');
+            if (!dropdownToggle && window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
             }
         });
     });
 
+    // Dropdown functionality for hover on larger screens
+    const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+
+    dropdowns.forEach(function (dropdown) {
+        dropdown.addEventListener('mouseenter', function() {
+            if (window.innerWidth >= 992) {
+                const menu = this.querySelector('.dropdown-menu');
+                menu.classList.add('show');
+                this.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'true');
+            }
+        });
+
+        dropdown.addEventListener('mouseleave', function() {
+            if (window.innerWidth >= 992) {
+                const menu = this.querySelector('.dropdown-menu');
+                menu.classList.remove('show');
+                this.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Add click event listener for mobile view
+        dropdown.querySelector('.dropdown-toggle').addEventListener('click', function (event) {
+            if (window.innerWidth < 992) {
+                event.preventDefault();
+                const menu = this.nextElementSibling;
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                menu.classList.toggle('show', isExpanded);
+                this.setAttribute('aria-expanded', !isExpanded);
+
+                // Stop the click event from bubbling up to the navbar toggler
+                event.stopPropagation();
+            }
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('.nav-item.dropdown')) {
+            dropdowns.forEach(function (dropdown) {
+                const menu = dropdown.querySelector('.dropdown-menu');
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                menu.classList.remove('show');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
 });
+
+
 
 // email
 var submitted = false;

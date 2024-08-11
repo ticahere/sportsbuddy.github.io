@@ -8,43 +8,57 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Future of Sports Storytelling</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <style>
-            
-        </style>
+        <script>
+            // Function to load the head template
+            function loadHead() {
+                fetch('head.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.head.appendChild(document.importNode(templateContent, true));
+                });
+            }
+
+            // Function to load the header template
+            function loadHeader() {
+                fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.body.insertBefore(document.importNode(templateContent, true), document.body.firstChild);
+                });
+            }
+
+            // Function to load the footer template
+            function loadFooter() {
+                fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.body.appendChild(document.importNode(templateContent, true));
+                });
+            }
+
+            // Load head, header, and footer when the window loads
+            window.onload = function() {
+                loadHead();
+                loadHeader();
+                loadFooter();
+            };
+        </script>
+        
     </head>
     <body id="home" class="scroll-snap" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
         
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                 <a class="navbar-brand" href="#home"><img class="mx-2" src="images/SB_logo_transparent.png" alt="SportsBuddy.ai" width="50">SportsBuddy.ai</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#customer">Customer</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                        <li class="nav-item"><a class="btn btn-primary nav-btn" href="https://sportsbuddy.online" target="_blank">Sign Up!</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+       
         <!-- Masthead-->
         <header class="masthead">
             <div class="video-background">
@@ -218,8 +232,10 @@
                     <div class="col-lg-12 d-flex flex-column align-items-center">
                         <div class="col-lg-9 text-center">
                             <h5 class="text-secondary">Our Product</h5>
-                            <h2 class="text-white mt-4">Turn Moments into Captivating Sports Stories</h2>
-                            <p class="text-white mt-2 mb-4">Leveraging advanced AI technology, our product turns raw game clips into compelling stories with engaging visual and audio cues in just a few clicks. We handle the editing, so you can focus on your audience.</p>
+                            <h2 class="text-white mt-4">SportsBuddy Studio</h2>
+                            <!-- <h2 class="text-white mt-4">Turn Moments into Captivating Sports Stories</h2> -->
+                            <p class="text-white mt-2 mb-4">Leveraging advanced AI technology, SportsBuddy Studio turns raw game clips into compelling stories 
+                                with engaging visual and audio cues in just a few clicks. We handle the editing, so you can focus on your audience.</p>
                         </div>
                         <div class="col-lg-12">
                             <video class="img-fluid" width="90%" height="100%" autoplay loop muted>
@@ -233,8 +249,8 @@
         </section>
         <!-- features -->
         <section class="product-section text-center" id="feature">
-            <div class="container mt-4 py-3">
-                <h2 class="text-white">SportsBuddy Features</h2>
+            <div class="container mb-4">
+                <!-- <h2 class="text-white">SportsBuddy Studio</h2> -->
                 <div class="row text-center py-5 text-white px-3">
                     <!-- Card 1 -->
                     <div class="col-md-4 px-5 d-flex flex-column align-items-center py-2">
@@ -251,11 +267,11 @@
                     <!-- Card 3 -->
                     <div class="col-md-4 px-5 d-flex flex-column align-items-center py-2">
                         <img src="images/feature_icon3.png" alt="Enhanced Fan Engagement" style="width: 140px;">
-                        <h3 class="text-secondary mt-3 mb-4">Fan Engagement</h3>
-                        <p class="text-white-80">Transform game moments into captivating stories and easily share them across various platforms to connect with your audience.</p>
+                        <h3 class="text-secondary mt-3 mb-4">Media Library</h3>
+                        <p class="text-white-80">Organize and access your highlight clips with ease using customized tags and a powerful search, all in one place.</p>
                     </div>
                     <div class="text-center mt-4">
-                        <a class="btn btn-primary btn-lg" href="https://sportsbuddy.online" target="_blank"><b>Sign Up!</b></a>
+                        <a class="btn btn-primary btn-lg" href="#product" target="_blank"><b>Learn More</b></a>
                     </div>
                 </div>
             </div>
@@ -341,145 +357,43 @@
                         <h4 >Case Study</h4>
                         <div class="text-center mb-4" style="font-size: 1.25rem;"> <i class="fa-solid fa-pen"></i></i> </div>
                 </div>
+                 <!-- Placeholder for the blog post previews -->
+                <div id="blog-preview-container"></div>
+               
                 
-                 <!-- Story 2 -->
-                 <div class="card px-4 pt-3">
-                    <div class="card-body clickable-div" onclick="location.href='case-influencer.html';">
-                        <div class="mb-4">
-                            <div class="row">
-                                <div class="col-7 d-flex"> <p class="article-tag">Influencer</p></div>
-                                <div class="col-5 d-flex justify-content-end"> <p class="time-tag">July 25, 2024</p></div>
-                            </div>
-                           
-                            <h2>Elevating Sports Content Creation for Influencers with SportsBuddy.ai
-                            </h2>
-                        </div>
-                        <div class="row flex justify-content-between">
-                            <div class="col-lg-4 col-sm-12">
-                                <img src="blog/influencer-thumbnail.png" class="card-img-top rounded-img" alt="...">
-                            </div>
-                            <div class="col-lg-8 col-sm-12 p-4">
-                                <p class="mb-0">Since the launch of our demo, SportsBuddy.ai has significantly enhanced content creation efficiency and quality 
-                                    for influencers by automating tedious processes and offering advanced editing features. This allows influencers to focus on 
-                                    delivering insightful and engaging content. Our collaboration with influencers has resulted in 14 videos, <b>amassing 504K plays 
-                                    and over 10K interactions</b>, showcasing the strong desire for engaging video content from sports fans.</p>
-                                <div class="text-end mt-5">
-                                    <a href="case-influencer.html" class="">Read Full Stories</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Story 1 -->
-                <div class="card px-4 pt-3 mt-4">
-                    <div class="card-body clickable-div" onclick="location.href='case-harvard.html';">
-                        <div class="mb-4">
-                            <div class="row">
-                                <div class="col-7 d-flex"><p class="article-tag">Team Marketing</p></div>
-                                <div class="col-5 d-flex justify-content-end"> <p class="time-tag">July 16, 2024</p></div>
-                            </div>
-                            
-                            <h2><b>Harvard Men’s Basketball: </b>Transforming Game Footage into Engaging Highlights with SportsBuddy.ai
-                            </h2>
-                        </div>
-                        <div class="row flex justify-content-between">
-                            <div class="col-lg-4 col-sm-12">
-                                <img src="blog/hmbb-thumbnail.png" class="card-img-top rounded-img" alt="...">
-                            </div>
-                            <div class="col-lg-8 col-sm-12 p-4">
-                                <p class="mb-0">During 2023-24 NCAA basketball season, SportsBuddy.ai collaborated with Harvard 
-                                    Athletic Communications to enhance fan experiences and team coverage through compelling sports storytelling.
-                                    By highlighting plays with our advanced video graphics and narratives, SportsBuddy.ai boosts player confidence and appeals to a wide range of community members and audiences,
-                                    resulting in <b>over 112K impressions and over 1.1K engagements</b>. 
-                                    </p>
-                                <div class="text-end mt-5">
-                                    <a href="case-harvard.html" class="">Read Full Stories</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center" style="margin-top: 60px;">
-                    <a class="btn btn-primary btn-lg" href="https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&amp;month=2024-07" target="_blank"><b>Schedule a chat</b></a>
-                </div>
             </div>
             
         </section>
-       
 
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form class="form-signup" id="contactForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScCD3Lqg1qH_mfPdfSKwsFO8sVsBmruubfZrn-xVgAz9tAtOQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-                            <div class="row input-group-newsletter">
-                                <div class="col-lg-9 mb-3">
-                                    <input class="form-control" id="emailAddress" type="email" name="emailAddress" placeholder="Enter email address..." aria-label="Enter email address..." required>
-                                </div>
-                                <div class="col-lg-3">
-                                    <button class="btn btn-primary" id="submitButton" type="submit">Notify Me!</button>
-                                </div>
-                            </div>
-                            <div class="invalid-feedback mt-2" id="emailError" style="display: none;">Email is not valid.</div>
-                            <div class="text-center mb-3 mt-2 text-white" id="submitSuccessMessage" style="display: none;">
-                                <div class="fw-bolder">Form submission successful!</div>
-                            </div>
-                            <div class="text-center text-danger mb-3 mt-2" id="submitErrorMessage" style="display: none;">Error sending message!</div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact-->
-        <section class="contact-section bg-black px-5">
-            <div class="row d-flex p-4 px-lg-5  justify-content-center">
-                <div class="col-xl-6 col-lg-6 text-white text-start">
-                    <h2 class="follow-heading">Follow Sportsbuddy.ai</h2>
-                    <div class="social d-flex flex-wrap justify-content-start">
-                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.instagram.com/sportsbuddyai/" target="_blank">
-                            <img src="images/Instagram.svg" alt="Instagram" class="social-icon">Instagram
-                        </a>
-                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://x.com/sportsbuddyai" target="_blank">
-                            <img src="images/X_logo.jpg" alt="X" class="social-icon">X
-                        </a>
-                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.linkedin.com/company/sportsbuddyai/" target="_blank">
-                            <img src="images/LinkedIn.svg" alt="LinkedIn" class="social-icon">LinkedIn
-                        </a>
-                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.youtube.com/channel/UCiO-STU3zRqoNFsB5exU-jg" target="_blank">
-                            <img src="images/YouTube.svg" alt="YouTube" class="social-icon">YouTube
-                        </a>
-                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.tiktok.com/@sportsbuddy.ai" target="_blank">
-                            <img src="images/TikTok.svg" alt="TikTok" class="social-icon">TikTok
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="col-xl-4 col-lg-6 text-white">
-                    <h2 class="text-start">Join Our Community</h2>
-                    <div class="social d-flex justify-content-start">
-                        <a class="social-link" href="https://discord.gg/PHpEKQSC44" target="_blank">
-                            <img src="images/Discord.svg" alt="Instagram"class="social-icon" >Discord
-                        </a>
-                        <a class="social-link" href="https://www.facebook.com/groups/1879278342515437" target="_blank">
-                            <img src="images/Facebook.svg" alt="X" class="social-icon">Facebook
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50">
-            <div class="container px-4 px-lg-5">Copyright &copy; <a href="#home">SportsBuddy.ai</a> 2024</div>
-        </footer>
+        <!-- footer -->
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        
+        <script>
+            // Load blog previews dynamically and show only the first two
+            function loadBlogPreviews(limit) {
+                fetch('blog-previews.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        const container = document.getElementById('blog-preview-container');
+                        const tempDiv = document.createElement('div');
+                        tempDiv.innerHTML = data;
+                        const previews = tempDiv.querySelectorAll('.blog-preview[data-preview="true"]');
+                        previews.forEach((preview, index) => {
+                            if (index < limit) {
+                                const colDiv = document.createElement('div');
+                                colDiv.style.marginBottom = '30px'; 
+                                colDiv.appendChild(preview);
+                                container.appendChild(colDiv);
+                            }
+                        });
+                    });
+            }
+    
+            // Load only the first 2 previews
+            loadBlogPreviews(2);
+        </script>
     </body>
 </html>

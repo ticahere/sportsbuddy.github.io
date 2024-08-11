@@ -1,0 +1,94 @@
+<template id="footer-template">
+    
+        <!-- Signup-->
+        <section class="signup-section" id="contact">
+            <div class="text-center my-4">
+                <h2 class="text-white mb-5">Curious About How We Can Help?</h2>
+                <a class="btn btn-secondary btn-lg" href="https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&amp;month=2024-07" target="_blank"><b>Schedule a chat</b></a>
+            </div>
+
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <form class="form-signup" id="contactForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScCD3Lqg1qH_mfPdfSKwsFO8sVsBmruubfZrn-xVgAz9tAtOQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                            <div class="row input-group-newsletter">
+                                <div class="col-lg-9 mb-3">
+                                    <input class="form-control" id="emailAddress" type="email" name="emailAddress" placeholder="Enter email address..." aria-label="Enter email address..." required>
+                                </div>
+                                <div class="col-lg-3">
+                                    <button class="btn btn-primary" id="submitButton" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                            <div class="invalid-feedback mt-2" id="emailError" style="display: none;">Email is not valid.</div>
+                            <div class="text-center mb-3 mt-2 text-white" id="submitSuccessMessage" style="display: none;">
+                                <div class="fw-bolder">Form submission successful!</div>
+                            </div>
+                            <div class="text-center text-danger mb-3 mt-2" id="submitErrorMessage" style="display: none;">Error sending message!</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black px-5">
+            <div class="row d-flex p-4 px-lg-5  justify-content-center">
+                <div class="col-xl-6 col-lg-6 text-white text-start">
+                    <h2 class="follow-heading">Follow Sportsbuddy.ai</h2>
+                    <div class="social d-flex flex-wrap justify-content-start">
+                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.instagram.com/sportsbuddyai/" target="_blank">
+                            <img src="images/Instagram.svg" alt="Instagram" class="social-icon">Instagram
+                        </a>
+                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://x.com/sportsbuddyai" target="_blank">
+                            <img src="images/X_logo.jpg" alt="X" class="social-icon">X
+                        </a>
+                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.linkedin.com/company/sportsbuddyai/" target="_blank">
+                            <img src="images/LinkedIn.svg" alt="LinkedIn" class="social-icon">LinkedIn
+                        </a>
+                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.youtube.com/channel/UCiO-STU3zRqoNFsB5exU-jg" target="_blank">
+                            <img src="images/YouTube.svg" alt="YouTube" class="social-icon">YouTube
+                        </a>
+                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.tiktok.com/@sportsbuddy.ai" target="_blank">
+                            <img src="images/TikTok.svg" alt="TikTok" class="social-icon">TikTok
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="col-xl-4 col-lg-6 text-white">
+                    <h2 class="text-start">Join Our Community</h2>
+                    <div class="row text-black-50  mt-3">
+                        <div class="col-lg-6 col-sm-12 d-flex justify-content-start mb-4">
+                            <div class="card bg-light bg-opacity-90" style="width: 200px;">
+                                <div class="card-body text-center">
+                                    <p class="card-title mb-3">Discord</p>
+                                    <a href="https://discord.gg/PHpEKQSC44" target="_blank" style="width: 100%;">
+                                        <img src="images/Discord.svg" alt="Discord" class="social-icon mb-4"><br/>
+                                        <div class="btn btn-outline-secondary btn-sm">Join</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 d-flex justify-content-start mb-4">
+                            <div class="card bg-light" style="width: 200px;">
+                                <div class="card-body text-center">
+                                    <p class="card-title mb-3">Facebook</p>
+                                    <a href="https://www.facebook.com/groups/1879278342515437" target="_blank" style="width: 100%;">
+                                        <img src="images/Facebook.svg" alt="Facebook" class="social-icon mb-4"><br/>
+                                        <div class="btn btn-outline-secondary  btn-sm ">Join</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer small text-center text-white-50">
+            <div class="container px-4 px-lg-5">Copyright &copy; <a href="#home">SportsBuddy.ai</a> 2024</div>
+        </footer>
+</template>

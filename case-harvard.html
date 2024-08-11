@@ -8,37 +8,55 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>SportsBuddy Case Study - Harvard Men's Basketball</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            // Function to load the head template
+            function loadHead() {
+                fetch('head.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.head.appendChild(document.importNode(templateContent, true));
+                });
+            }
+
+            // Function to load the header template
+            function loadHeader() {
+                fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.body.insertBefore(document.importNode(templateContent, true), document.body.firstChild);
+                });
+            }
+
+            // Function to load the footer template
+            function loadFooter() {
+                fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.body.appendChild(document.importNode(templateContent, true));
+                });
+            }
+
+            // Load head, header, and footer when the window loads
+            window.onload = function() {
+                loadHead();
+                loadHeader();
+                loadFooter();
+            };
+        </script>
     </head>
     <body id="home" class="blog-post" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
         
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                 <a class="navbar-brand" href="../"><img class="mx-2" src="images/SB_logo_transparent.png" alt="SportsBuddy.ai" width="50">SportsBuddy.ai</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../#blog">Blog</a></li>
-                        <li class="nav-item"><a class="btn btn-primary nav-btn" href="https://sportsbuddy.online" target="_blank">Sign Up!</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <!-- Page Header-->
         <header class="blog-post" style="background-image: url('blog/heading.png')">
             <div class="container position-relative px-4 px-lg-5">
@@ -112,84 +130,13 @@
                         <h2 class="section-heading">Call to action</h2>
                         <p>The scalability of SportsBuddy allows for broader application to other collegiate sports teams, enhancing content creation and outreach efforts in other sports, such as football. To learn more about how SportsBuddy.ai can help promote your team profile like we did for Harvard, reach out for an exploratory call with our team. We are committed to helping you easily turn game highlights into engaging stories for your audience. We invite youth, local, high school, and collegiate teams to explore partnership opportunities and enhance their marketing, branding, and athletic communications through engaging sports storytelling.
                         </p>
-
-                        <div class="text-center" style="margin-top: 60px;">
-                            <a class="btn btn-primary btn-lg" href="https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&amp;month=2024-07" target="_blank"><b>Schedule a chat</b></a>
-                        </div>
-                        
                     </div>
                 </div>
             </div>
-            <!-- Contact-->
         
         </article>
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form class="form-signup" id="contactForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScCD3Lqg1qH_mfPdfSKwsFO8sVsBmruubfZrn-xVgAz9tAtOQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-                            <div class="row input-group-newsletter">
-                                <div class="col-lg-9 mb-3">
-                                    <input class="form-control" id="emailAddress" type="email" name="emailAddress" placeholder="Enter email address..." aria-label="Enter email address..." required>
-                                </div>
-                                <div class="col-lg-3">
-                                    <button class="btn btn-primary" id="submitButton" type="submit">Notify Me!</button>
-                                </div>
-                            </div>
-                            <div class="invalid-feedback mt-2" id="emailError" style="display: none;">Email is not valid.</div>
-                            <div class="text-center mb-3 mt-2 text-white" id="submitSuccessMessage" style="display: none;">
-                                <div class="fw-bolder">Form submission successful!</div>
-                            </div>
-                            <div class="text-center text-danger mb-3 mt-2" id="submitErrorMessage" style="display: none;">Error sending message!</div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact-section bg-black px-5">
-            <div class="row d-flex p-4 px-lg-5  justify-content-center">
-                <div class="col-xl-6 col-lg-6 text-white text-start">
-                    <h2 class="follow-heading">Follow Sportsbuddy.ai</h2>
-                    <div class="social d-flex flex-wrap justify-content-start">
-                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.instagram.com/sportsbuddyai/" target="_blank">
-                            <img src="images/Instagram.svg" alt="Instagram" class="social-icon">Instagram
-                        </a>
-                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://x.com/sportsbuddyai" target="_blank">
-                            <img src="images/X_logo.jpg" alt="X" class="social-icon">X
-                        </a>
-                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.linkedin.com/company/sportsbuddyai/" target="_blank">
-                            <img src="images/LinkedIn.svg" alt="LinkedIn" class="social-icon">LinkedIn
-                        </a>
-                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.youtube.com/channel/UCiO-STU3zRqoNFsB5exU-jg" target="_blank">
-                            <img src="images/YouTube.svg" alt="YouTube" class="social-icon">YouTube
-                        </a>
-                        <a class="social-link col-6 col-sm-4 col-md-3 col-lg-2 mx-2 text-center" href="https://www.tiktok.com/@sportsbuddy.ai" target="_blank">
-                            <img src="images/TikTok.svg" alt="TikTok" class="social-icon">TikTok
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="col-xl-4 col-lg-6 text-white">
-                    <h2 class="text-start">Join Our Community</h2>
-                    <div class="social d-flex justify-content-start">
-                        <a class="social-link" href="https://discord.gg/PHpEKQSC44" target="_blank">
-                            <img src="images/Discord.svg" alt="Instagram"class="social-icon" >Discord
-                        </a>
-                        <a class="social-link" href="https://www.facebook.com/groups/1879278342515437" target="_blank">
-                            <img src="images/Facebook.svg" alt="X" class="social-icon">Facebook
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50">
-             
-            <div class="container px-4 px-lg-5">Copyright &copy; <a href="../">SportsBuddy.ai</a> 2024</div>
-        </footer>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
