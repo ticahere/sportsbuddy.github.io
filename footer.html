@@ -2,36 +2,43 @@
     
         <!-- Signup-->
         <section class="signup-section" id="contact">
-            <div class="text-center my-4">
-                <h2 class="text-white mb-5">Curious About How We Can Help?</h2>
-                <a class="btn btn-secondary btn-lg" href="https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&amp;month=2024-07" target="_blank"><b>Schedule a chat</b></a>
-            </div>
-
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form class="form-signup" id="contactForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScCD3Lqg1qH_mfPdfSKwsFO8sVsBmruubfZrn-xVgAz9tAtOQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-                            <div class="row input-group-newsletter">
-                                <div class="col-lg-9 mb-3">
-                                    <input class="form-control" id="emailAddress" type="email" name="emailAddress" placeholder="Enter email address..." aria-label="Enter email address..." required>
+            <div class="container">
+                <div class="text-center my-5">
+                    <h2 class="text-white mb-4">Discover How We Can Elevate Your Game</h2>
+                    <a class="btn btn-secondary btn-lg mt-3 p-4" href="https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&amp;month=2024-07" target="_blank">
+                        <b>Schedule a chat!</b></a>
+                </div>
+                
+               
+                 <!-- Subscription Form -->
+                 <div class="container px-4 px-lg-5 mt-5">
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-md-10 col-lg-8 mx-auto text-center">
+                            <i class="far fa-paper-plane fa-2x px-3 mb-3 text-white"></i>
+                            <h2 class="text-white mb-4">Stay Updated with the Latest News</h2>
+                            <form class="form-signup" id="contactForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScCD3Lqg1qH_mfPdfSKwsFO8sVsBmruubfZrn-xVgAz9tAtOQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                                <div class="row input-group-newsletter">
+                                    <div class="col-lg-9 mb-3">
+                                        <input class="form-control" id="emailAddress" type="email" name="emailAddress" placeholder="Enter email address..." aria-label="Enter email address..." required>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <button class="btn btn-primary" id="submitButton" type="submit">Subscribe</button>
+                                    </div>
                                 </div>
-                                <div class="col-lg-3">
-                                    <button class="btn btn-primary" id="submitButton" type="submit">Subscribe</button>
+                                <div class="invalid-feedback mt-2" id="emailError" style="display: none;">Email is not valid.</div>
+                                <div class="text-center mb-3 mt-2 text-white" id="submitSuccessMessage" style="display: none;">
+                                    <div class="fw-bolder">Form submission successful!</div>
                                 </div>
-                            </div>
-                            <div class="invalid-feedback mt-2" id="emailError" style="display: none;">Email is not valid.</div>
-                            <div class="text-center mb-3 mt-2 text-white" id="submitSuccessMessage" style="display: none;">
-                                <div class="fw-bolder">Form submission successful!</div>
-                            </div>
-                            <div class="text-center text-danger mb-3 mt-2" id="submitErrorMessage" style="display: none;">Error sending message!</div>
-                        </form>
+                                <div class="text-center text-danger mb-3 mt-2" id="submitErrorMessage" style="display: none;">Error sending message!</div>
+                            </form>
+                        </div>
                     </div>
                 </div>
+                 <!-- Email Contact Line -->
+                 <div class="text-white text-center mt-5 mb-5">
+                    <p>Prefer to reach out directly? <a href="mailto:sportsbuddyai@gmail.com" class="text-secondary text-decoration-underline">Send us an email</a>.</p>
+                </div>
             </div>
-
-            
         </section>
         <!-- Contact-->
         <section class="contact-section bg-black px-5">

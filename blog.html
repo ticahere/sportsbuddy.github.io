@@ -91,15 +91,18 @@
                 <div class="row mb-4 filter-btn-container">
                     <div class="col">
                         <button class="btn filter-btn active" data-filter="all">All</button>
-                        <button class="btn filter-btn" data-filter="case-study">Case Studies</button>
+                        <button class="btn filter-btn" data-filter="case-study">Case Study</button>
+                        <button class="btn filter-btn" data-filter="article">Article</button>
                         <button class="btn filter-btn" data-filter="press">Press</button>
-                        <button class="btn filter-btn" data-filter="research">Research</button>
                     </div>
                 </div>
 
                 <div class="container mt-5" style="margin-bottom: 100px ;">
                     <div class="row" id="blog-container">
                         <!-- Blog previews will be loaded here -->
+                    </div>
+                    <div id="no-results-message" class="text-center text-muted" style="display: none; margin-top: 20px;">
+                        <p>No results this time. </p>
                     </div>
                 </div>
             </div>
@@ -153,13 +156,24 @@
             // Function to filter blog previews based on category
             function filterBlogPreviews(category) {
                 const previews = document.querySelectorAll('.blog-preview');
+                let matches = 0;
+                
                 previews.forEach(preview => {
                     if (category === 'all' || preview.dataset.category === category) {
                         preview.parentElement.style.display = 'block'; // Show the matching previews
+                        matches++;
                     } else {
                         preview.parentElement.style.display = 'none'; // Hide the non-matching previews
                     }
                 });
+
+                // Show or hide the "No results found" message
+                const noResultsMessage = document.getElementById('no-results-message');
+                if (matches === 0) {
+                    noResultsMessage.style.display = 'block';
+                } else {
+                    noResultsMessage.style.display = 'none';
+                }
 
                 // Update button states
                 document.querySelectorAll('.filter-btn').forEach(btn => {

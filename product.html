@@ -169,8 +169,8 @@
 
             .video-item {
                 position: relative;
-                width: 300px;
-                height: 180px;
+                width: 350px;
+                height: 220px;
                 cursor: pointer;
                 overflow: hidden;
                 border-radius: 10px;
@@ -257,6 +257,32 @@
                 padding: 12px 30px;
                 font-size: 1.1rem;
             }
+            /* community card */
+            .community-section {
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(245, 245, 245, 0.9) 40%, rgba(250, 200, 150, 0.8) 70%, rgb(255 179 104) 100%), 
+                        radial-gradient(circle at bottom center, rgba(255, 245, 230, 0.3), rgba(255, 235, 215, 0.2), transparent);
+                padding: 80px 20px;
+            }
+
+            .community-card {
+                background-color: rgba(255, 255, 255, 0.9);
+                border-radius: 15px;
+                padding: 30px 20px;
+                width: 100%;
+                margin: 10px;
+                /* max-width: 300px; */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .community-card .card-title {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            @media (max-width: 768px) {
+                .community-card {
+                    max-width: 100%; /* Make sure cards take full width on smaller screens */
+                }
+            }
         </style>
     </head>
     <body id="home" class="blog-post" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
@@ -266,7 +292,7 @@
             <div class="container py-5">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-start">
-                        <h1>Introducing SportsBuddy Studio</h1>
+                        <h1>Introducing <br/> SportsBuddy Studio</h1>
                         <p class="mb-5">Turn your game into captivating highlights with our easy-to-use AI video creation tool</p>
                     </div>
                     <!-- Right Column: Product Image -->
@@ -320,8 +346,23 @@
             </div>
         </section>
 
+         <!-- Call to Action Section -->
+         <section class="cta-section bg-highlight py-5">
+            <div class="container">
+                <div class=" lign-items-center">
+                        <h2>Ready to Transform Your Game Clips?</h2>
+                        <p>Join top sports content creators who trust our platform to craft captivating video stories that engage and inspire.</p>
+                        <a href="https://sportsbuddy.online" class="btn btn-warning">Try It Now</a>
+                    </div>
+                    
+            </div>
+        </section>
+
+        
+        
+
         <!-- Video Gallery Section -->
-        <section class="video-gallery">
+        <section class="video-gallery" id="tutorial">
             <div class="container">
                 <h2>Watch Our Tutorials</h2>
                 <div id="video-grid" class="video-grid">
@@ -329,6 +370,7 @@
                 </div>
             </div>
         </section>
+        
 
          <!-- Video Modal -->
         <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
@@ -346,14 +388,43 @@
                 </div>
             </div>
         </div>
-        <!-- Call to Action Section -->
-        <section class="cta-section  bg-highlight">
-            <div class="container">
-                <h2>Ready to Transform Your Designs?</h2>
-                <p>Join thousands of professionals who trust our product to create stunning interiors.</p>
-                <a href="#" class="btn btn-primary">Try It Now</a>
+       
+        <section class="community-section py-5" id="roadmap">
+            <div class="container text-black-50 text-center">
+                <h2 class="text-black">Join Our Community and Explore Our Roadmap!</h2>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-5 col-sm-12 mb-4 d-flex align-items-stretch mx-n2">
+                        <div class="card community-card mx-auto">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h3 class="text-primary">Discord Server</h3>
+                                <p class="card-subtitle mb-3 flex-grow-1">Receive instant support, stay updated with the latest news, 
+                                    and connect with the sports community—all in one place!</p>
+                                <a href="https://discord.gg/PHpEKQSC44" target="_blank" style="width: 100%;">
+                                    <img src="images/Discord.svg" alt="Discord" class="social-icon-lg mb-4"><br/>
+                                    <div class="btn btn-outline-secondary btn-sm">Join Now!</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12 mb-4 d-flex align-items-stretch mx-n2">
+                        <div class="card community-card mx-auto">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h3 class="text-primary">SportsBuddy Roadmap</h3>
+                                <p class="card-subtitle mb-3 flex-grow-1">Share your wishlist and stay updated with our product roadmap on Canny.io.</p>
+                                <a href="https://sportsbuddyai.canny.io/" target="_blank" style="width: 100%;">
+                                    <img src="images/roadmap.png" alt="Facebook" class="social-icon-lg mb-4"><br/>
+                                    <div class="btn btn-outline-secondary btn-sm">Visit Us</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        
+        
+        
+        
         <!-- Footer-->
         
         <!-- Bootstrap core JS-->

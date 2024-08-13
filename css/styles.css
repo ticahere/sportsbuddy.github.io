@@ -11212,6 +11212,7 @@ body {
 .contact-section {
   padding-top: 3rem;
   padding-bottom: 1rem;
+  margin-top: -25px;
 }
 .contact-section .card {
   border: 0;
@@ -11323,6 +11324,10 @@ z-index: -1;
 }
 .social-icon {
   width: 2rem;
+  margin-bottom: 5px; 
+}
+.social-icon-lg {
+  width: 4rem;
   margin-bottom: 5px; 
 }
 
