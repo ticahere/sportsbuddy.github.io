@@ -35,7 +35,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #64a19d;
-  --bs-secondary: #FFA80F;
+  --bs-secondary: #e67400ff;
   --bs-success: #67c29c;
   --bs-info: #1cabc4;
   --bs-warning: #e4c662;
@@ -63,7 +63,8 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family:   Nunito, "Lora", serif, Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-title-font-family: "Albert Sans", sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -128,6 +129,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  font-family: var(--bs-title-font-family);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -137,6 +139,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
+  font-family: var(--bs-title-font-family);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -146,6 +149,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
+  font-family: var(--bs-title-font-family);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -11116,6 +11120,8 @@ body {
 .masthead h2, .masthead .h2 {
   max-width: 40rem;
   font-size: 1rem;
+  font-weight: 400;
+  /* font-family: var(--bs-body-font-family); */
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
@@ -11140,7 +11146,8 @@ body {
 }
 
 .about-section {
-  padding-top: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.7) 100%);
 }
 .about-section p {
@@ -11148,10 +11155,12 @@ body {
 }
 
 .mission-section {
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 .mission-section .featured-text {
   padding: 2rem;
+  font-family: var(--bs-title-font-family);
+  font-weight: 300;
 }
 @media (min-width: 992px) {
   .mission-section .featured-text {
@@ -11165,8 +11174,8 @@ body {
   }
 }
 .projects-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11186,7 +11195,8 @@ body {
 }
 
 .product-section {
-  padding-top: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
   background: black;
 }
 
@@ -11210,9 +11220,8 @@ body {
 }
 
 .contact-section {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  margin-top: -25px;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
 }
 .contact-section .card {
   border: 0;
