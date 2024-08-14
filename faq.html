@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+   
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SportsBuddy FAQ</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            // Function to load the head template
+            function loadHead() {
+                fetch('head.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.head.appendChild(document.importNode(templateContent, true));
+                });
+            }
+
+            // Function to load the header template
+            function loadHeader() {
+                fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.body.insertBefore(document.importNode(templateContent, true), document.body.firstChild);
+                });
+            }
+
+            // Function to load the footer template
+            function loadFooter() {
+                fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    const tempContainer = document.createElement('div');
+                    tempContainer.innerHTML = data;
+                    const templateContent = tempContainer.querySelector('template').content;
+                    document.body.appendChild(document.importNode(templateContent, true));
+                });
+            }
+
+            // Load head, header, and footer when the window loads
+            window.onload = function() {
+                loadHead();
+                loadHeader();
+                loadFooter();
+            };
+        </script>
+        
+        <style>
+            /* Header section styles */
+            .faq-header {
+                background: linear-gradient(130deg, rgb(231 255 172) 0%, rgb(255 200 87) 50%, rgb(184 255 117) 100%);
+                color: #ffffff;
+                padding: 60px 20px;
+                text-align: center;
+            }
+            
+            .faq-header h1 {
+                font-family: 'Varela Round', sans-serif;
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .faq-header p {
+                font-family: 'Nunito', sans-serif;
+                font-size: 1.25rem;
+                margin-bottom: 0;
+            }
+
+            /* FAQ Table styles */
+            .faq-table {
+                width: 100%;
+                margin: 40px 0;
+                border-collapse: separate;
+                border-spacing: 0 10px; /* Adds space between rows */
+            }
+
+            .faq-table th, .faq-table td {
+                padding: 20px;
+                text-align: left;
+                vertical-align: top;
+                border-radius: 8px;
+            }
+
+            .faq-table th {
+                background-color: #eeeae3; 
+                color: #d87d00;
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+
+            .faq-table td {
+
+                color: #333;
+                font-size: 1rem;
+            }
+            .faq-header h1 {
+                font-family: 'Varela Round', sans-serif;
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .faq-header p {
+                font-family: 'Nunito', sans-serif;
+                font-size: 1.25rem;
+                margin-bottom: 0;
+            }
+
+
+        </style>
+    </head>
+    <body id="home" class="blog-post" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+        
+        <!-- Header -->
+        <header class="faq-header">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class=" justify-content-center w-100">
+                    <div class="text-center">
+                        <h1 class="mx-auto mt-3 text-uppercase mb-3">SportsBuddy FAQ</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="faq-section">
+            <div class="container">
+                <table class="faq-table" id="faqTable">
+                    <!-- FAQ items will be loaded here -->
+                </table>
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('faq.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const faqTable = document.getElementById('faqTable');
+
+                        data.forEach((item, index) => {
+                            // Create question row
+                            const questionRow = document.createElement('tr');
+                            const questionCell = document.createElement('th');
+                            questionCell.textContent = `${index + 1}. ${item.question}`; // Add index before the question
+                            questionRow.appendChild(questionCell);
+
+                            // Create answer row
+                            const answerRow = document.createElement('tr');
+                            const answerCell = document.createElement('td');
+                            
+                            // Set the innerHTML of the answer cell to render HTML content properly
+                            answerCell.innerHTML = item.answer;
+                            
+                            answerRow.appendChild(answerCell);
+
+                            // Append the rows to the table
+                            faqTable.appendChild(questionRow);
+                            faqTable.appendChild(answerRow);
+                        });
+                    })
+                    .catch(error => console.error('Error loading FAQ data:', error));
+            });
+        </script>
+    </body>
+</html>

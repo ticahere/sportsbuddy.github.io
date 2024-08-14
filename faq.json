@@ -1,0 +1,50 @@
+[
+    {
+        "question": "What problem does SportsBuddy.ai solve?",
+        "answer": "High-quality sports clips, like those shared by the NBA, are always eye-catching and impressive, but they require a lot of time and resources to produce.  Our team at SportsBuddy.ai simplifies this process by combining intuitive interactions and natural language with real-time, interactive visualizations. We make it easy for you to effortlessly create pro-level clips, crafting informative, engaging, and personalized video highlights."
+    },
+    {
+        "question": "Who is SportsBuddy Studio suitable for?",
+        "answer": "Our product, SportsBuddy Studio, is perfect for anyone who needs to edit sports clips—whether you're emphasizing tactics, details, data, or simply highlighting players. Our users include content creators, coaches, trainers, team marketing professionals, both professional and amateur players, and fans!"
+    },
+    {
+        "question": "Do you provide onboarding assistance?",
+        "answer": "Absolutely! We offer comprehensive onboarding resources, video guides, and even training to help you get started with SportsBuddy Studio. You can <a href=\"https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&month=2024-07\" target=\"_blank\">schedule a chat</a> with us!"
+    },
+    {
+        "question": "How can I share feedback with the SportsBuddy.ai team?",
+        "answer": "We'd love to hear your feedback! You can share it in our <a href=\"https://discord.gg/PHpEKQSC44\" target=\"_blank\">Discord</a> #feedback-suggestion channel or via email at <a href=\"mailto:sportsbuddyai@gmail.com\">sportsbuddyai@gmail.com</a>."
+    },
+    {
+        "question": "Where can I find soon-to-be-released features?",
+        "answer": "Great question! You can view our upcoming features and vote to help us prioritize what we release by visiting <a href=\"https://sportsbuddyai.canny.io\" target=\"_blank\">SportsBuddy Roadmap</a>."
+    },
+    {
+        "question": "Can I use the videos I create on SportsBuddy Studio for commercial purposes or publish them externally?",
+        "answer": "Yes, you can freely use and publish the videos you create on SportsBuddy Studio for commercial purposes. Just make sure that you own the copyright for any video clips you upload."
+    },
+    {
+        "question": "How long does it take to upload a clip?",
+        "answer": "It typically takes less than 5 minutes to upload a 30-second clip. However, the time may vary depending on the length of your clip and the traffic on our platform. We’re constantly working to improve our backend pipeline to make the process even quicker!"
+    },
+    {
+        "question": "How do I get started with SportsBuddy Studio?",
+        "answer": "Here's how you can make your first fancy video! We also have <a href=\"../product.html#tutorial\"> tutorial videos</a> for you:<br><br> 1. Sign up for an account on <a href=\"https://sportsbuddy.online/\" target=\"_blank\">SportsBuddy Studio</a>.<br> 2. Click the Media icon on the top left and select your video to upload, or simply drag and drop your video.<br> 3. Monitor the video processing progress in real-time! This can take around 3 to 5 minutes, depending on the length of your clip and the traffic on our platform. <br> 4. Once the processing is complete, the screen will display a game ID for your clip. Click on this to start your editing journey!"
+    },
+    {
+        "question": "What are the video requirements?",
+        "answer": "<b>• Format</b>: Only mp4 format and files less than 50MB are supported at this time. <br> <b>• Clip Angle</b>: To ensure the best processing results, start your video clip with a broadcast angle—a wide shot of the playing field as seen in sports broadcasts should be the first frame of your video. <br><br> <b>DO NOT CLOSE</b>: Make sure not to close the SportsBuddy Studio page, or you'll lose track of the processing progress.\nWe apologize for any inconvenience and are working to address these limitations as soon as possible."
+    },
+    {
+        "question": "Why did my task fail or process for a long time?",
+        "answer": "Sometimes our service faces a heavy workload, which can delay projects. If you keep encountering these issues, we encourage you to join our <a href=\"https://discord.gg/PHpEKQSC44\" target=\"_blank\">Discord</a>, where you can get real-time tech support in the #getting-help channel."
+    },
+    {
+        "question": "Can I have the team prioritize my feature request?",
+        "answer": "Yes, there is a way to boost your feature request! Submit your request via this link and post it there. We prioritize feature requests with the most upvotes in our roadmap, and we'll notify you once your requested feature is under review, planned, or completed!"
+    },
+    {
+        "question": "Is there a tutorial for each feature? I don’t know how to use it.",
+        "answer": "Yes, on our website, we have a section dedicated to tutorial videos for each feature. Feel free to explore any feature you'd like to use. If you need more assistance, we encourage you to join our <a href=\"https://discord.gg/PHpEKQSC44\" target=\"_blank\">Discord</a> or <a href=\"https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&month=2024-07\" target=\"_blank\">schedule a chat</a> with us."
+    }
+]
