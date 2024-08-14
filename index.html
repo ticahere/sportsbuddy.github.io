@@ -9,50 +9,7 @@
         <meta name="author" content="" />
         <title>Future of Sports Storytelling</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <script>
-            // Function to load the head template
-            function loadHead() {
-                fetch('head.html')
-                .then(response => response.text())
-                .then(data => {
-                    const tempContainer = document.createElement('div');
-                    tempContainer.innerHTML = data;
-                    const templateContent = tempContainer.querySelector('template').content;
-                    document.head.appendChild(document.importNode(templateContent, true));
-                });
-            }
-
-            // Function to load the header template
-            function loadHeader() {
-                fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    const tempContainer = document.createElement('div');
-                    tempContainer.innerHTML = data;
-                    const templateContent = tempContainer.querySelector('template').content;
-                    document.body.insertBefore(document.importNode(templateContent, true), document.body.firstChild);
-                });
-            }
-
-            // Function to load the footer template
-            function loadFooter() {
-                fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    const tempContainer = document.createElement('div');
-                    tempContainer.innerHTML = data;
-                    const templateContent = tempContainer.querySelector('template').content;
-                    document.body.appendChild(document.importNode(templateContent, true));
-                });
-            }
-
-            // Load head, header, and footer when the window loads
-            window.onload = function() {
-                loadHead();
-                loadHeader();
-                loadFooter();
-            };
-        </script>
+        <script src="js/loadTemplate.js" ></script>
         
     </head>
     <body id="home" class="scroll-snap" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
