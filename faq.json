@@ -41,7 +41,7 @@
     },
     {
         "question": "Can I have the team prioritize my feature request?",
-        "answer": "Yes, there is a way to boost your feature request! Submit your request via this link and post it there. We prioritize feature requests with the most upvotes in our roadmap, and we'll notify you once your requested feature is under review, planned, or completed!"
+        "answer": "Yes, there is a way to boost your feature request! Submit your request via this <a href=\"https://sportsbuddyai.canny.io/requests\" target=\"_blank\">link</a> and post your feature request up there. We prioritize feature requests with the most upvotes in our roadmap, and we'll notify you once your requested feature is under review, planned, or completed!"
     },
     {
         "question": "Is there a tutorial for each feature to get started?",
