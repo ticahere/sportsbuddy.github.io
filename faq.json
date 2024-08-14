@@ -1,15 +1,15 @@
 [
     {
         "question": "What problem does SportsBuddy.ai solve?",
-        "answer": "High-quality sports clips, like those shared by the NBA, are always eye-catching and impressive, but they require a lot of time and resources to produce.  Our team at SportsBuddy.ai simplifies this process by combining intuitive interactions and natural language with real-time, interactive visualizations. We make it easy for you to effortlessly create pro-level clips, crafting informative, engaging, and personalized video highlights."
+        "answer": "Creating high-quality game recaps with video highlights and visual annotations, like those shared by the NBA and broadcasters, can be time-consuming and resource-intensive . SportsBuddy.ai simplifies this process by combining intuitive interactions and natural language with real-time, interactive visualizations. We make it easy for you to effortlessly create pro-level clips, crafting informative, engaging, and personalized video highlights."
     },
     {
         "question": "Who is SportsBuddy Studio suitable for?",
-        "answer": "Our product, SportsBuddy Studio, is perfect for anyone who needs to edit sports clips—whether you're emphasizing tactics, details, data, or simply highlighting players. Our users include content creators, coaches, trainers, team marketing professionals, both professional and amateur players, and fans!"
+        "answer": "Our flagship product, SportsBuddy Studio, is perfect for anyone looking  to edit sports clips and tell sports-related stories—whether focusing on tactics, details, data, or simply highlighting players. Our users include content creators, coaches, trainers, team marketing professionals, professional and amateur players, and fans!"
     },
     {
         "question": "Do you provide onboarding assistance?",
-        "answer": "Absolutely! We offer comprehensive onboarding resources, video guides, and even training to help you get started with SportsBuddy Studio. You can <a href=\"https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&month=2024-07\" target=\"_blank\">schedule a chat</a> with us!"
+        "answer": "Absolutely! We offer comprehensive onboarding resources, video guides, and training to help you get started with SportsBuddy Studio. You can also <a href=\"https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&month=2024-07\" target=\"_blank\">schedule a chat</a> with us for customized support!"
     },
     {
         "question": "How can I share feedback with the SportsBuddy.ai team?",
@@ -17,7 +17,7 @@
     },
     {
         "question": "Where can I find soon-to-be-released features?",
-        "answer": "Great question! You can view our upcoming features and vote to help us prioritize what we release by visiting <a href=\"https://sportsbuddyai.canny.io\" target=\"_blank\">SportsBuddy Roadmap</a>."
+        "answer": "Great question! You can view our upcoming features and vote to help us prioritize what we release next by visiting <a href=\"https://sportsbuddyai.canny.io\" target=\"_blank\">SportsBuddy Roadmap</a>."
     },
     {
         "question": "Can I use the videos I create on SportsBuddy Studio for commercial purposes or publish them externally?",
@@ -36,7 +36,7 @@
         "answer": "<b>• Format</b>: Only mp4 format and files less than 50MB are supported at this time. <br> <b>• Clip Angle</b>: To ensure the best processing results, start your video clip with a broadcast angle—a wide shot of the playing field as seen in sports broadcasts should be the first frame of your video. <br><br> <b>DO NOT CLOSE</b>: Make sure not to close the SportsBuddy Studio page, or you'll lose track of the processing progress.\nWe apologize for any inconvenience and are working to address these limitations as soon as possible."
     },
     {
-        "question": "Why did my task fail or process for a long time?",
+        "question": "Why did my task fail or take a long time to process?",
         "answer": "Sometimes our service faces a heavy workload, which can delay projects. If you keep encountering these issues, we encourage you to join our <a href=\"https://discord.gg/PHpEKQSC44\" target=\"_blank\">Discord</a>, where you can get real-time tech support in the #getting-help channel."
     },
     {
@@ -44,7 +44,7 @@
         "answer": "Yes, there is a way to boost your feature request! Submit your request via this link and post it there. We prioritize feature requests with the most upvotes in our roadmap, and we'll notify you once your requested feature is under review, planned, or completed!"
     },
     {
-        "question": "Is there a tutorial for each feature? I don’t know how to use it.",
-        "answer": "Yes, on our website, we have a section dedicated to tutorial videos for each feature. Feel free to explore any feature you'd like to use. If you need more assistance, we encourage you to join our <a href=\"https://discord.gg/PHpEKQSC44\" target=\"_blank\">Discord</a> or <a href=\"https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&month=2024-07\" target=\"_blank\">schedule a chat</a> with us."
+        "question": "Is there a tutorial for each feature to get started?",
+        "answer": "Yes! We have a section on our website dedicated to tutorial videos for each feature. Feel free to explore any feature you'd like to use. If you need more assistance, join our <a href=\"https://discord.gg/PHpEKQSC44\" target=\"_blank\">Discord</a> or <a href=\"https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&month=2024-07\" target=\"_blank\">schedule a chat</a> with us."
     }
 ]
