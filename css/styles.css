@@ -11355,13 +11355,11 @@ z-index: -1;
   scroll-snap-stop: always;
 }
 /* customized css for blog page */
-#blog-container h2{
-  /* font-size: 1.5rem; */
-}
-.blog-section .filter-btn-container {
+
+.filter-btn-container {
   text-align: center; 
 } 
-.blog-section .filter-btn {
+.filter-btn {
   border: none; /* Remove the border */
   background: none; /* Remove background color */
   font-weight: normal; /* Default font weight */
@@ -11371,12 +11369,12 @@ z-index: -1;
   cursor: pointer; /* Change cursor to pointer */
   transition: color 0.3s, font-weight 0.3s; /* Smooth transition for color and font-weight */
 }
-.blog-section .filter-btn.active {
+ .filter-btn.active {
   font-weight: bold; /* Bold font for active state */
   color: var(--bs-success);
 }
 
-.blog-section .filter-btn:hover {
+.filter-btn:hover {
   color: var(--bs-success);
 }
 /* customized css for blog post*/

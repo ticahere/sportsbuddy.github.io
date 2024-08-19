@@ -94,6 +94,15 @@
                 </div>
             </div>
         </header>
+        <!-- Filter Buttons -->
+        <div class="row mb-4 filter-btn-container">
+            <div>
+                <button class="btn filter-btn active" data-filter="all">All</button>
+                <button class="btn filter-btn" data-filter="general">General</button>
+                <button class="btn filter-btn" data-filter="product">Product</button>
+                <button class="btn filter-btn" data-filter="support">Tech Support & Feedback</button>
+            </div>
+        </div>
 
         <section class="faq-section">
             <div class="container">
@@ -112,33 +121,79 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
+                let faqData = [];
+
                 fetch('faq.json')
                     .then(response => response.json())
                     .then(data => {
-                        const faqTable = document.getElementById('faqTable');
+                        faqData = data;
 
-                        data.forEach((item, index) => {
-                            // Create question row
-                            const questionRow = document.createElement('tr');
-                            const questionCell = document.createElement('th');
-                            questionCell.textContent = `${index + 1}. ${item.question}`; // Add index before the question
-                            questionRow.appendChild(questionCell);
+                        // Check URL for filter parameter
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const filterParam = urlParams.get('filter');
 
-                            // Create answer row
-                            const answerRow = document.createElement('tr');
-                            const answerCell = document.createElement('td');
-                            
-                            // Set the innerHTML of the answer cell to render HTML content properly
-                            answerCell.innerHTML = item.answer;
-                            
-                            answerRow.appendChild(answerCell);
+                        // Apply the filter if it exists in the URL, otherwise load all
+                        const initialFilter = filterParam ? filterParam : 'all';
+                        applyFilter(initialFilter);
 
-                            // Append the rows to the table
-                            faqTable.appendChild(questionRow);
-                            faqTable.appendChild(answerRow);
+                        // Add click event listeners to filter buttons
+                        const filterButtons = document.querySelectorAll('.filter-btn');
+                        filterButtons.forEach(button => {
+                            button.addEventListener('click', function() {
+                                const filter = this.getAttribute('data-filter');
+                                applyFilter(filter);
+                            });
                         });
                     })
                     .catch(error => console.error('Error loading FAQ data:', error));
+
+                function applyFilter(filter) {
+                    // Remove active class from all buttons
+                    const filterButtons = document.querySelectorAll('.filter-btn');
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+                    // Find the button with the matching filter and add the active class
+                    const activeButton = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
+                    if (activeButton) {
+                        activeButton.classList.add('active');
+                    }
+
+                    // Update the URL to reflect the current filter
+                    const newUrl = `${window.location.pathname}?filter=${filter}`;
+                    history.pushState(null, '', newUrl);
+
+                    // Filter the FAQ data based on the selected category
+                    const filteredData = filter === 'all' ? faqData : faqData.filter(item => item.category === filter);
+
+                    // Render the filtered FAQs
+                    renderFAQs(filteredData);
+                }
+
+                function renderFAQs(data) {
+                    const faqTable = document.getElementById('faqTable');
+                    faqTable.innerHTML = ''; // Clear the table
+
+                    data.forEach((item, index) => {
+                        // Create question row
+                        const questionRow = document.createElement('tr');
+                        const questionCell = document.createElement('th');
+                        questionCell.textContent = `${item.id}. ${item.question}`; // Use the index of the filtered data for numbering
+                        questionRow.appendChild(questionCell);
+
+                        // Create answer row
+                        const answerRow = document.createElement('tr');
+                        const answerCell = document.createElement('td');
+                        
+                        // Set the innerHTML of the answer cell to render HTML content properly
+                        answerCell.innerHTML = item.answer;
+                        
+                        answerRow.appendChild(answerCell);
+
+                        // Append the rows to the table
+                        faqTable.appendChild(questionRow);
+                        faqTable.appendChild(answerRow);
+                    });
+                }
             });
         </script>
     </body>
