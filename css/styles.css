@@ -11271,6 +11271,12 @@ body {
 .press-tag {
   background-color:var(--bs-cyan); 
 }
+.case-tag {
+  background-color:var(--bs-purple); 
+}
+.author-tag {
+  color: var(--bs-gray);
+}
 .time-tag {
   color: var(--bs-gray-600);
   font-size: small;
@@ -11375,7 +11381,8 @@ z-index: -1;
 }
 /* customized css for blog post*/
 .blog-post article {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+  text-align: justify;
 }
 .blog-post header {
   padding-top: 10rem;
@@ -11409,12 +11416,14 @@ z-index: -1;
   font-weight: 700;
   margin-top: 2.75rem;
   margin-bottom: 0.75rem;
+  text-align: start;
 }
 .blog-post .section-subtitle {
   letter-spacing: initial;
   font-weight: 300;
   padding: 1rem 0;
   color:var(--bs-orange);
+  text-align: start;
 }
 
 .blog-post .caption {
@@ -11432,6 +11441,7 @@ z-index: -1;
   font-style: italic;
   border-left: 4px solid var(--bs-primary); 
   padding-left: 1rem; 
+  text-align: start;
 }
 .rounded-img{
   padding: 0.5rem;

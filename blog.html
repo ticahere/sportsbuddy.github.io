@@ -93,12 +93,16 @@
                         tempDiv.innerHTML = data;
                         const previews = Array.from(tempDiv.querySelectorAll('.blog-preview'));
 
-                        // Reverse the order of previews
-                        previews.reverse();
+                        // Sort previews by ID in decreasing order
+                        previews.sort((a, b) => {
+                            const idA = parseInt(a.id.split('-')[1]);
+                            const idB = parseInt(b.id.split('-')[1]);
+                            return idB - idA; // Sort in descending order
+                        });
 
                         previews.forEach((preview, index) => {
                             const colDiv = document.createElement('div');
-                            colDiv.style.marginBottom = '30px'; 
+                            colDiv.style.marginBottom = '30px';
                             colDiv.appendChild(preview);
                             container.appendChild(colDiv);
                         });
