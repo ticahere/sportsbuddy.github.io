@@ -7,14 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>SportsBuddy Blog</title>
+        <title data-translate="blogTitle">SportsBuddy Blog</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <link rel="preload" href="header.html" as="document">
-        <link rel="preload" href="head.html" as="document">       
-        <link rel="preload" href="footer.html" as="document">       
-        <link rel="preload" href="blog-previews.html" as="document">       
+        <link rel="prefetch" href="header.html">
+        <link rel="prefetch" href="head.html">
+        <link rel="prefetch" href="footer.html">
+        <link rel="prefetch" href="blog-previews.html">
         
         <script src="js/loadTemplate.js"></script>
+        <script src="js/languageSwitcher.js"></script> 
         
         <style>
             /* Apply the background to the header */
@@ -41,7 +42,7 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class=" justify-content-center w-100">
                     <div class="text-center">
-                        <h1 class="mx-auto mt-3 text-uppercase mb-3">SportsBuddy Blog</h1>
+                        <h1 class="mx-auto mt-3 text-uppercase mb-3" data-translate="blogTitle">SportsBuddy Blog</h1>
                     </div>
                 </div>
             </div>
@@ -52,10 +53,10 @@
                  <!-- Filter Buttons -->
                 <div class="row mb-4 filter-btn-container">
                     <div class="col">
-                        <button class="btn filter-btn active" data-filter="all">All</button>
-                        <button class="btn filter-btn" data-filter="case-study">Case Study</button>
-                        <button class="btn filter-btn" data-filter="article">Article</button>
-                        <button class="btn filter-btn" data-filter="press">Press</button>
+                        <button class="btn filter-btn active" data-filter="all" data-translate="blog-all">All</button>
+                        <button class="btn filter-btn" data-filter="case-study" data-translate="blog-caseStudy">Case Study</button>
+                        <button class="btn filter-btn" data-filter="article" data-translate="blog-article">Article</button>
+                        <button class="btn filter-btn" data-filter="press" data-translate="blog-press">Press</button>
                     </div>
                 </div>
 
@@ -64,7 +65,7 @@
                         <!-- Blog previews will be loaded here -->
                     </div>
                     <div id="no-results-message" class="text-center text-muted" style="display: none; margin-top: 20px;">
-                        <p>No results this time. </p>
+                        <!-- <p>No results this time. </p> -->
                     </div>
                 </div>
             </div>

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "question": "SportsBuddy.ai 解決了什麼問題？",
+        "category": "general",
+        "answer": "SportsBuddy.ai讓使用者能輕鬆製作如 NBA 和廣播公司分享的高品質比賽回顧，包含影片亮點和視覺註解。過去要製作這種影片可能既耗時又費力，SportsBuddy.ai 結合流暢的使用者介面和自然語言，以及即時互動的視覺化，簡化了這個過程。我們讓您能輕鬆創建專業等級的影片剪輯，打造出具備資訊性、吸引力且個性化的影片亮點。"
+    },
+    {
+        "id": 2,
+        "question": "誰適合使用 SportsBuddy Studio？",
+        "category": "general",
+        "answer": "我們的旗艦產品 SportsBuddy Studio 非常適合任何想要編輯體育剪輯並講述體育相關故事的人，不論是著重於戰術、細節、數據，還是單純地突顯球員，SportsBuddy Studio都能滿足您創作的需求。我們的使用者包括內容創作者、教練、訓練員、球隊行銷專業人士、職業和業餘選手，以及球迷！"
+    },
+    {
+        "id": 3,
+        "question": "如何開始使用 SportsBuddy Studio？",
+        "category": "product",
+        "answer": "以下是您製作第一支酷炫影片的步驟！我們也有<a href=\"../product.html#tutorial\">教學影片</a>供您參考：<br><br> 1. 在 <a href=\"https://sportsbuddy.online/\" target=\"_blank\">SportsBuddy Studio</a> 註冊帳號。<br> 2. 點擊左上角的媒體圖示並選擇要上傳的影片，或直接拖曳影片至頁面上。<br> 3. 即時監控影片處理進度！依據您的剪輯長度及我們平台的流量，這個過程大約需要 3 到 5 分鐘。<br> 4. 處理完成後，畫面上會顯示該剪輯的比賽 ID。點擊此 ID 開始您的編輯之旅！"
+    },
+    {
+        "id": 4,
+        "question": "上傳的影片有哪些格式要求？",
+        "category": "product",
+        "answer": "<b>• 格式</b>: 目前僅支援 mp4 格式且檔案大小需小於 50MB。<br> <b>• 剪輯角度</b>: 為了確保最佳處理效果，請從廣播角度開始您的影片剪輯——體育廣播中拍攝場地全景的廣角畫面應該是影片的第一幀。<br><br> <b>請勿關閉</b>: 請勿關閉 SportsBuddy Studio 頁面，否則您將無法追蹤處理進度。\n對於造成的不便，我們深感抱歉，並正努力儘快改善這些限制。"
+    },
+    {
+        "id": 5,
+        "question": "你們是否提供使用教學？",
+        "category": "product",
+        "answer": "當然！我們提供全面的上手資源、教學影片及訓練，協助您開始使用 SportsBuddy Studio。您也可以<a href=\"https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&month=2024-07\" target=\"_blank\">預約與我們的會議</a>，獲取個性化支援！"
+    },
+    {
+        "id": 6,
+        "question": "每個功能都有教學嗎？",
+        "category": "product",
+        "answer": "有的！我們的網站上有專門介紹每個功能的教學影片。隨時探索您有興趣使用的功能。如果需要更多幫助，歡迎加入我們的<a href=\"https://discord.gg/PHpEKQSC44\" target=\"_blank\">Discord</a>或<a href=\"https://calendly.com/sportsbuddyai/introduction?preview_source=et_card&month=2024-07\" target=\"_blank\">預約與我們的會議</a>。"
+    },
+    {
+        "id": 7,
+        "question": "上傳影片剪輯需要多長時間？",
+        "category": "product",
+        "answer": "上傳 30 秒的剪輯通常不超過 5 分鐘。然而，時間可能會依據您的剪輯長度及平台的流量有所不同。我們正在不斷改進後端流程，以縮短這個過程的時間！"
+    },
+    {
+        "id": 8,
+        "question": "我可以將在 SportsBuddy Studio 製作的影片用於商業用途或公開發佈嗎？",
+        "category": "product",
+        "answer": "可以，您可以自由使用並發佈您在 SportsBuddy Studio 製作的影片，作為商業用途。您只需確保您擁有上傳影片的版權。"
+    },
+    {
+        "id": 9,
+        "question": "我在哪裡可以找到即將推出的功能？",
+        "category": "product",
+        "answer": "這是一個好問題！您可以造訪<a href=\"https://sportsbuddyai.canny.io\" target=\"_blank\">SportsBuddy Roadmap</a>查看即將推出的功能，並投票幫助我們決定接下來的開發優先順序。"
+    },
+    {
+        "id": 10,
+        "question": "為什麼我的任務失敗或處理時間過長？",
+        "category": "support",
+        "answer": "有時我們的服務負載過重，可能會導致項目延遲。如果您持續遇到這些問題，建議您加入我們的<a href=\"https://discord.gg/PHpEKQSC44\" target=\"_blank\">Discord</a>，在 #getting-help 頻道獲取即時技術支援。"
+    },
+    {
+        "id": 11,
+        "question": "我如何向 SportsBuddy.ai 團隊提供意見回饋？",
+        "category": "support",
+        "answer": "我們非常樂意聽取您的意見！您可以在我們的<a href=\"https://discord.gg/PHpEKQSC44\" target=\"_blank\">Discord</a>的 #feedback-suggestion 頻道或透過電子郵件<a href=\"mailto:sportsbuddyai@gmail.com\">sportsbuddyai@gmail.com</a>與我們分享您的想法。"
+    },
+    {
+        "id": 12,
+        "question": "我如何讓團隊優先考慮我的功能建議？",
+        "category": "support",
+        "answer": "有的，有一種方式可以提升您的功能建議！透過這個<a href=\"https://sportsbuddyai.canny.io/requests\" target=\"_blank\">連結</a>提交您的請求，並將您的功能需求發布在那裡。我們會優先考慮在我們的開發路線圖中投票最多的功能需求，一旦您的請求功能進入審查、計劃或完成，我們會通知您！"
+    }
+]

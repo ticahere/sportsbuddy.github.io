@@ -9,31 +9,43 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="productDropdown" data-translate="product" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Product
                             </a>
                             <div class="dropdown-menu" aria-labelledby="productDropdown">
-                                <a class="dropdown-item" href="/product.html">SportsBuddy Studio</a>
-                                <a class="dropdown-item" href="/product.html#tutorial">Tutorial</a>
-                                <a class="dropdown-item" href="/product.html#roadmap">Community</a>
-                                <a class="dropdown-item" href="/product.html#roadmap">Roadmap</a>
+                                <a class="dropdown-item" href="/product.html" data-translate="product-studio">SportsBuddy Studio</a>
+                                <a class="dropdown-item" href="/product.html#tutorial" data-translate="product-tutorial">Tutorial</a>
+                                <a class="dropdown-item" href="/product.html#roadmap" data-translate="product-community">Community</a>
+                                <a class="dropdown-item" href="/product.html#roadmap" data-translate="product-roadmap">Roadmap</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" data-translate="blog" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Blog
                             </a>
                             <div class="dropdown-menu" aria-labelledby="blogDropdown">
-                                <a class="dropdown-item" href="/blog.html">All</a>
-                                <a class="dropdown-item" href="/blog.html?filter=case-study">Case Study</a>
-                                <a class="dropdown-item" href="/blog.html?filter=article">Article</a>
-                                <a class="dropdown-item" href="/blog.html?filter=press">Press</a>
+                                <a class="dropdown-item" href="/blog.html" data-translate="blog-all">All</a>
+                                <a class="dropdown-item" href="/blog.html?filter=case-study" data-translate="blog-caseStudy">Case Study</a>
+                                <a class="dropdown-item" href="/blog.html?filter=article" data-translate="blog-article">Article</a>
+                                <a class="dropdown-item" href="/blog.html?filter=press" data-translate="blog-press">Press</a>
                             </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/faq.html">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        <li class="nav-item"><a class="btn nav-btn btn-outline-primary opacity-80" href="https://sportsbuddy.online" target="_blank">Log in</a></li>
-                        <li class="nav-item"><a class="btn btn-primary nav-btn" href="https://sportsbuddy.online" target="_blank">Sign Up!</a></li>
+                        <li class="nav-item"><a class="nav-link" data-translate="faq" href="/faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" data-translate="contact" href="#contact">Contact</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" data-translate="lang" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <a class="dropdown-item" href="#" onclick="setLanguage('en'); return false;">English</a>
+                                <a class="dropdown-item" href="#" onclick="setLanguage('ch'); return false;">繁體中文</a>
+                                <a class="dropdown-item" href="#" onclick="setLanguage('zh'); return false;">简体中文</a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item"><a class="btn nav-btn btn-outline-primary opacity-80" href="https://sportsbuddy.online" target="_blank" data-translate="login">Log in</a></li>
+                        <li class="nav-item"><a class="btn btn-primary nav-btn" href="https://sportsbuddy.online" target="_blank" data-translate="signup">Sign Up!</a></li>
                     </ul>
                 </div>
             </div>

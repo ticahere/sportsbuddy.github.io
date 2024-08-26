@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Parallel fetch of head, header, and footer
-    Promise.all([headPromise, headerPromise, footerPromise]).catch(error => {
+    Promise.all([headPromise, headerPromise, footerPromise])
+    .catch(error => {
         console.error('Error loading templates:', error);
     });
     

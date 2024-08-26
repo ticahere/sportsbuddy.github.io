@@ -7,12 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>SportsBuddy Product</title>
+        <title data-translate="productTitle">SportsBuddy Product</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <link rel="preload" href="header.html" as="document">
-        <link rel="preload" href="head.html" as="document">       
-        <link rel="preload" href="footer.html" as="document">    
+        <link rel="prefetch" href="header.html">
+        <link rel="prefetch" href="head.html">
+        <link rel="prefetch" href="footer.html">
         <script src="js/loadTemplate.js" ></script>
+        <script src="js/languageSwitcher.js"></script> 
         
         <style>
             body {
@@ -252,8 +253,8 @@
             <div class="container py-5">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-start">
-                        <h1>Introducing <br/> SportsBuddy Studio</h1>
-                        <p class="mb-5">Turn your game into captivating highlights with our easy-to-use AI video creation tool</p>
+                        <h1  data-translate="productName">Introducing <br/> SportsBuddy Studio</h1>
+                        <p class="mb-5"  data-translate="productPara">Turn your game into captivating highlights with our easy-to-use AI video creation tool</p>
                     </div>
                     <!-- Right Column: Product Image -->
                     <div class="col-md-6 text-center">
@@ -268,22 +269,22 @@
         <!-- Key Features Section -->
         <section class="features-section">
             <div class="container">
-                <h2>Key Features</h2>
+                <h2 data-translate="featureTitle">Key Features</h2>
                 <div class="row">
                     <div class="col-md-4 feature">
                         <img src="/images/feature_icon1.png" alt="Dynamic Visuals">
-                        <h3>Dynamic Visuals</h3>
-                        <p>Automatically detect players and track their movements to create interactive and engaging visual effects.</p>
+                        <h3 data-translate="productFeature-1">Dynamic Visuals</h3>
+                        <p data-translate="productFeature-1-Para">Automatically detect players and track their movements to create interactive and engaging visual effects.</p>
                     </div>
                     <div class="col-md-4 feature">
                         <img src="/images/feature_icon2.png" alt="Personalized Narratives">
-                        <h3>Personalized Narratives</h3>
-                        <p>Use automated annotations, subtitles, and voiceovers to showcase your insights and create compelling stories.</p>
+                        <h3 data-translate="productFeature-2">Personalized Narratives</h3>
+                        <p data-translate="productFeature-2-Para">Use automated annotations, subtitles, and voiceovers to showcase your insights and create compelling stories.</p>
                     </div>
                     <div class="col-md-4 feature">
                         <img src="/images/feature_icon3.png" alt="Media Library">
-                        <h3>Media Library</h3>
-                        <p>Organize and access your highlight clips with ease using customized tags and a powerful search, all in one place.</p>
+                        <h3 data-translate="productFeature-3">Media Library</h3>
+                        <p data-translate="productFeature-3-Para">Organize and access your highlight clips with ease using customized tags and a powerful search, all in one place.</p>
                     </div>
                 </div>
             </div>
@@ -295,11 +296,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 image-container">
-                        <h4 class="text-uppercase"><b>Highlight Player</b></h4>
+                        <h4 class="text-uppercase"><b data-translate="useCase-1">Highlight Player</b></h4>
                         <img src="/product/tutorial/product-highlight.gif" alt="Highlight Player">
                     </div>
                     <div class="col-md-6 image-container">
-                        <h4 class="text-uppercase"><b>Tell Detailed Story</b></h4>
+                        <h4 class="text-uppercase"><b data-translate="useCase-1">Tell Detailed Story</b></h4>
                         <img src="/product/tutorial/product-story.gif" alt="Tactical Breakdown">
                     </div>
                 </div>
@@ -310,9 +311,9 @@
          <section class="cta-section bg-highlight py-5">
             <div class="container">
                 <div class=" lign-items-center">
-                        <h2>Ready to Transform Your Game Clips?</h2>
-                        <p>Join top sports content creators who trust our platform to craft captivating video stories that engage and inspire.</p>
-                        <a href="https://sportsbuddy.online" class="btn btn-warning" target="_blank">Try It Now</a>
+                        <h2 data-translate="actionTitle">Ready to Transform Your Game Clips?</h2>
+                        <p data-translate="actionPara">Join top sports content creators who trust our platform to craft captivating video stories that engage and inspire.</p>
+                        <a href="https://sportsbuddy.online" class="btn btn-warning" data-translate="btn-try" target="_blank">Try It Now</a>
                     </div>
                     
             </div>
@@ -324,7 +325,7 @@
         <!-- Video Gallery Section -->
         <section class="video-gallery" id="tutorial">
             <div class="container">
-                <h2>Watch Our Tutorials</h2>
+                <h2 data-translate="tutorialTitle">Watch Our Tutorials</h2>
                 <div id="video-grid" class="video-grid">
                     <!-- Video items will be loaded here by JavaScript -->
                 </div>
@@ -351,17 +352,17 @@
        
         <section class="community-section py-5" id="roadmap">
             <div class="container text-black-50 text-center">
-                <h2 class="text-black">Join Our Community and Explore Our Roadmap!</h2>
+                <h2 class="text-black" data-translate="communityTitle">Join Our Community and Explore Our Roadmap!</h2>
                 <div class="row justify-content-center mt-5">
                     <div class="col-md-5 col-sm-12 mb-4 d-flex align-items-stretch mx-n2">
                         <div class="card community-card mx-auto">
                             <div class="card-body text-center d-flex flex-column">
-                                <h3 class="text-primary">Discord Server</h3>
-                                <p class="card-subtitle mb-3 flex-grow-1">Receive instant support, stay updated with the latest news, 
+                                <h3 class="text-primary" data-translate="community-1">Discord Server</h3>
+                                <p class="card-subtitle mb-3 flex-grow-1" data-translate="community-1-Para">Receive instant support, stay updated with the latest news, 
                                     and connect with the sports community—all in one place!</p>
                                 <a href="https://discord.gg/PHpEKQSC44" target="_blank" style="width: 100%;">
                                     <img src="images/Discord.svg" alt="Discord" class="social-icon-lg mb-4"><br/>
-                                    <div class="btn btn-outline-secondary btn-sm">Join Now!</div>
+                                    <div class="btn btn-outline-secondary btn-sm" data-translate="btn-join">Join Now!</div>
                                 </a>
                             </div>
                         </div>
@@ -369,11 +370,11 @@
                     <div class="col-md-5 col-sm-12 mb-4 d-flex align-items-stretch mx-n2">
                         <div class="card community-card mx-auto">
                             <div class="card-body text-center d-flex flex-column">
-                                <h3 class="text-primary">SportsBuddy Roadmap</h3>
-                                <p class="card-subtitle mb-3 flex-grow-1">Share your wishlist and stay updated with our product roadmap on Canny.io.</p>
+                                <h3 class="text-primary" data-translate="community-2">SportsBuddy Roadmap</h3>
+                                <p class="card-subtitle mb-3 flex-grow-1" data-translate="community-2-Para">Share your wishlist and stay updated with our product roadmap on Canny.io.</p>
                                 <a href="https://sportsbuddyai.canny.io/" target="_blank" style="width: 100%;">
                                     <img src="images/roadmap.png" alt="Facebook" class="social-icon-lg mb-4"><br/>
-                                    <div class="btn btn-outline-secondary btn-sm">Visit Us</div>
+                                    <div class="btn btn-outline-secondary btn-sm" data-translate="btn-visit">Visit Us</div>
                                 </a>
                             </div>
                         </div>
