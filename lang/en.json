@@ -73,7 +73,8 @@
         "blog-all": "All",
         "blog-caseStudy": "Case Study",
         "blog-article": "Article",
-        "blog-press": "Press"
+        "blog-press": "Press",
+        "btn-article": "Full Article"
     },
     "faq": {
         "faqTitle": "SportsBuddy FAQ",
@@ -86,7 +87,7 @@
        "productTitle": "SportsBuddy Product",
        "productName": "Introducing <br/> SportsBuddy Studio",
        "productPara": "Turn your game into captivating highlights with our easy-to-use AI video creation tool",
-       "featureTitle": "Key Features",
+       "featureTitle": "AI-Powered Innovations",
        "productFeature-1": "Dynamic Visuals",
        "productFeature-1-Para": "Automatically detect players and track their movements to create interactive and engaging visual effects.",
        "productFeature-2": "Personalized Narratives",
@@ -94,7 +95,7 @@
        "productFeature-3": "Media Library",
        "productFeature-3-Para": "Organize and access your highlight clips with ease using customized tags and a powerful search, all in one place.",
        "useCase-1": "Highlight Player",
-       "useCase-2": "Tell Detailed Story",
+       "useCase-2": "Breakdown Tactics",
        "actionTitle": "Ready to Transform Your Game Clips?",
        "actionPara": "Join top sports content creators who trust our platform to craft captivating video stories that engage and inspire.",
        "btn-try": "Try It Now",
@@ -107,5 +108,4 @@
         "community-2-Para": "Share your wishlist and stay updated with our product roadmap on Canny.io.",
         "btn-visit": "Visit Us"
     }
-
 }

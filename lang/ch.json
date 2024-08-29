@@ -73,7 +73,8 @@
         "blog-all": "全部文章",
         "blog-caseStudy": "成功案例",
         "blog-article": "最新文章",
-        "blog-press": "媒體報導"
+        "blog-press": "媒體報導",
+        "btn-article": "閱讀全文"
     },
     "faq": {
         "faqTitle": "SportsBuddy 常見問題",
@@ -86,7 +87,7 @@
         "productTitle": "SportsBuddy 產品",
         "productName": "SportsBuddy Studio",
         "productPara": "使用我們易於上手的 AI 影片製作工具，將您的比賽變成引人入勝的亮點剪輯",
-        "featureTitle": "主要功能",
+        "featureTitle": "AI 驅動創新功能",
         "productFeature-1": "動態視覺效果",
         "productFeature-1-Para": "利用AI技術精準追蹤球員動作，創造生動的視覺效果。",
         "productFeature-2": "個性化敘事",

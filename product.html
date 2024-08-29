@@ -92,6 +92,27 @@
             .features-section .feature p {
                 font-size: 1rem;
             }
+
+            /* Sports */
+            .sports-section {
+                padding: 60px 20px;
+                padding-bottom: 40px;
+                color: white;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+            .sports-section h3 {
+                color: var(--bs-secondary);
+                margin-top: 1rem;
+            }
+            .sports-section video {
+                width: 100%;
+                height: auto;
+                margin-bottom: 3rem;
+            }
+            .sports-section img {
+                width: 60px;
+            }
             
             /* Product Images Section */
             .product-images {
@@ -109,6 +130,8 @@
                 border-radius: 10px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
+            
+            
             /* Video Gallery Section */
             .video-gallery {
                 padding: 60px 20px;
@@ -264,12 +287,10 @@
             </div>
         </section>
 
-        
-
         <!-- Key Features Section -->
         <section class="features-section">
             <div class="container">
-                <h2 data-translate="featureTitle">Key Features</h2>
+                <h2 data-translate="featureTitle">AI-Powered Innovations</h2>
                 <div class="row">
                     <div class="col-md-4 feature">
                         <img src="/images/feature_icon1.png" alt="Dynamic Visuals">
@@ -290,20 +311,65 @@
             </div>
         </section>
 
+          <!-- Sports Section -->
+          <section class="sports-section">
+            <div class="container">
+                <h2 class="text-center mt-4">Unleash Your Creativity with Ease</h2> 
+                
+                <div class="row mt-5">
+                    <div class="col-md-3 col-sm-6 mb-5">
+                        <video class="video-item" autoplay muted controls loop data-translate="video-error-message">
+                            <source src="product/SB-basketball.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                          </video>
+                        <img src="/images/icon-basketball.png" width="80px" alt="Basketball">
+                        <h3 data-translate="">Basketball</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-5">
+                        <video class="video-item" autoplay controls loop data-translate="video-error-message">
+                            <source src="product/SB-volleyball.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                          </video>
+                        <img src="/images/icon-volleyball.png" width="80px" alt="Basketball">
+                        <h3 data-translate="">Volleyball</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-5">
+                        <video class="video-item" autoplay controls loop data-translate="video-error-message">
+                            <source src="product/SB-soccer.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                          </video>
+                        <img src="/images/icon-soccer.png" width="80px" alt="Basketball">
+                        <h3 data-translate="">Soccer</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-5">
+                        <video class="video-item" autoplay controls loop data-translate="video-error-message">
+                            <source src="product/SB-lacrosse.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                          </video>
+                        <img src="/images/icon-lacrosse.png" width="80px" alt="Basketball">
+                        <h3 data-translate="">Lacrosse</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Product Images Section -->
         <section class="product-images">
             <div class="container">
+                
                 <div class="row">
                     <div class="col-md-6 image-container">
                         <h4 class="text-uppercase"><b data-translate="useCase-1">Highlight Player</b></h4>
                         <img src="/product/tutorial/product-highlight.gif" alt="Highlight Player">
+
                     </div>
                     <div class="col-md-6 image-container">
-                        <h4 class="text-uppercase"><b data-translate="useCase-1">Tell Detailed Story</b></h4>
+                        <h4 class="text-uppercase"><b data-translate="useCase-2">Breakdown Tactics</b></h4>
                         <img src="/product/tutorial/product-story.gif" alt="Tactical Breakdown">
                     </div>
                 </div>
+                
             </div>
         </section>
 

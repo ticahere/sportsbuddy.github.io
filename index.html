@@ -12,7 +12,6 @@
         <link rel="prefetch" href="header.html">
         <link rel="prefetch" href="head.html">
         <link rel="prefetch" href="footer.html">
-        <link rel="prefetch" href="blog-previews.html">
         <script src="js/loadTemplate.js" ></script>
         <script src="js/languageSwitcher.js"></script> 
        
@@ -322,13 +321,11 @@
                         <div class="text-center mb-4" style="font-size: 1.25rem;"> <i class="fa-solid fa-pen"></i></i> </div>
                 </div>
                  <!-- Placeholder for the blog post previews -->
-                <div id="blog-preview-container"></div>
+                <div id="blog-container"></div>
                 <div class="text-white text-center mt-5 mb-5">
                     <h5><a href="/blog.html" class="text-black-50" data-translate="more-articles"> Show More Articles >>> </a></h5>
                 </div>
-                
             </div>
-            
         </section>
 
         <!-- footer -->
@@ -337,29 +334,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/loadBlog.js"></script>
         <script>
-            // Load blog previews dynamically and show only the first two
-            function loadBlogPreviews(limit) {
-                fetch('blog-previews.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        const container = document.getElementById('blog-preview-container');
-                        const tempDiv = document.createElement('div');
-                        tempDiv.innerHTML = data;
-                        const previews = tempDiv.querySelectorAll('.blog-preview[data-preview="true"]');
-                        previews.forEach((preview, index) => {
-                            if (index < limit) {
-                                const colDiv = document.createElement('div');
-                                colDiv.style.marginBottom = '30px'; 
-                                colDiv.appendChild(preview);
-                                container.appendChild(colDiv);
-                            }
-                        });
-                    });
-            }
-    
-            // Load only the first 2 previews
-            loadBlogPreviews(2);
+            document.addEventListener('DOMContentLoaded', function() {
+                const lang = getLanguageFromUrl();
+                loadBlogPreviews(lang, "case-study", 2);
+            });
         </script>
     </body>
 </html>

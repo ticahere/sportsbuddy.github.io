@@ -127,3 +127,9 @@ document.querySelectorAll('.image-row img').forEach(img => {
         img.classList.remove('enlarged');
     });
 });
+
+// Function to get query parameters from the URL
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}

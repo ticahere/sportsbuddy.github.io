@@ -1,0 +1,71 @@
+{
+  "title": "SportsBuddy Case Study - Harvard Men's Basketball",
+  "header": {
+    "background_image": "blog/heading.png",
+    "heading": {
+      "part1": "H",
+      "part2": "arvard Men’s Basketball:<br/> ",
+      "part3": "Transforming Game Footage into Engaging Highlights with SportsBuddy.ai"
+    },
+    "tags": ["Team Marketing"],
+    "date": "July 16, 2024"
+  },
+  "content": {
+    "intro": "In collaboration with the Harvard men’s basketball team, SportsBuddy.ai have demonstrated the impact of our innovative solution on transforming traditional sports footage into engaging, insightful highlights. This case study highlights our partnership with Harvard MBB in the 2023-2024 season, promoting marketing, branding, and athletic communications through engaging sports storytelling.",
+    "sections": [
+      {
+        "heading": "Problem",
+        "paragraphs": [
+          "Amateur and collegiate teams often lack the advanced technology needed to produce professional-quality highlight reels, which are crucial for enhancing player visibility, game analysis, and fan engagement. Traditional methods of creating these reels are time-consuming, require specialized skills, and often fail to provide the professional insights needed to fully understand the game. This results in reduced engagement and limited information conveyed through videos."
+        ]
+      },
+      {
+        "heading": "Solution",
+        "paragraphs": [
+          "SportsBuddy.ai addresses these challenges with a user-friendly platform that leverages AI and deep sports analytic insights to augment basketball game footage intelligently. In collaboration with the Harvard men’s basketball team, we enhance footage with captivating visual effects such as spotlights on key players, detailed game breakdowns showcasing player tactics, and flaming basketballs to highlight successful plays. This technology allows teams at all levels to produce high-quality highlight reels using just regular video footage, requiring no advanced cameras or motion sensors.",
+          "SportsBuddy.ai seamlessly integrates data, annotations, video effects, and narrative for Harvard MBB, enabling engaging content development in a shorter time compared to professional video editing software not tailored to sports content. Our AI tool automates the tedious content creation process and ties visual insights closely to the dynamic players and actions in the video."
+        ],
+        "blockquote": "We empower sports teams to create engaging highlights that are seamless, informative, and impactful.",
+        "video": {
+          "src": "blog/rim_run.mp4",
+          "caption": "With SportsBuddy’s easy-to-use video technology, Harvard MBB’s Coach provides in-depth breakdowns for each play as voiceovers, and SportsBuddy creates high-quality and engaging content that sheds light on expert insights into specific plays and notable executions."
+        }
+      },
+      {
+        "heading": "Impact",
+        "images": [
+          "blog/hmbb-impact-1.png",
+          "blog/hmbb-impact-2.png"
+        ],
+        "paragraphs": [
+          "SportsBuddy.ai enhances the viewer’s experience and understanding of sports games by providing an accessible and efficient way for sports teams to produce professional-quality highlight reels in no time. Our technology improves player visibility and enhances marketing and branding through compelling sports storytelling.",
+          "By highlighting specific plays, SportsBuddy.ai boosts player confidence and appeals to a wide range of community members and audiences. Over the course of our collaboration, Harvard Men's Basketball (MBB) created seven videos featuring informative game clips and coach's insights using our platform, resulting in over 112K impressions and over 1.1K engagements to date."
+        ],
+        "blockquote": "\"This not only appeals to recruits who see a style players can thrive in but also encourages fans and donors to support our games and initiatives.\"<br/><br/><b>Nicholas Dow</b><br/>Assistant Director of Athletic Communications at Harvard"
+      },
+      {
+        "heading": "",
+        "paragraphs": [
+          "In addition, our collaboration with Harvard MBB offers coaches and players a platform to showcase team performance, dedication, and achievement. Videos featuring the coach’s narration have provided valuable insights and learning opportunities for the Harvard community and beyond. Moreover, the team appreciated seeing their clips analyzed with a level of detail comparable to NBA productions. \"I believe there are specific plays they would appreciate having featured to demonstrate their tactical approaches,\" emphasized Dow."
+        ],
+        "images": ["blog/hmbb-impact-3.png"]
+      },
+      {
+        "heading": "",
+        "paragraphs": [
+          "See more Harvard Men's Basketball video highlights created by SportsBuddy.ai on our <a href=\"https://www.instagram.com/sportsbuddyai\" target=\"_blank\">Instagram</a>.</p>"
+        ]
+      },
+      {
+        "heading": "Call to action",
+        "paragraphs": [
+          "The scalability of SportsBuddy allows for broader application to other collegiate sports teams, enhancing content creation and outreach efforts in other sports, such as football. To learn more about how SportsBuddy.ai can help promote your team profile like we did for Harvard, reach out for an exploratory call with our team. We are committed to helping you easily turn game highlights into engaging stories for your audience. We invite youth, local, high school, and collegiate teams to explore partnership opportunities and enhance their marketing, branding, and athletic communications through engaging sports storytelling."
+        ]
+      }
+    ]
+  },
+  "social": {
+    "postURL": "https://sportsbuddy.ai/article.html?article=case_harvard&lang=en",
+    "postTitle": "Case study with Harvard Men's Basketball: Transforming Game Footage into Engaging Highlights with SportsBuddy.ai. Read full story at "
+  }
+}

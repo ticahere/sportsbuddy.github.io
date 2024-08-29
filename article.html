@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+   
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SportsBuddy Article</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/loadTemplate.js" ></script>
+        <script src="js/languageSwitcher.js"></script> 
+        <script src="js/loadArticle.js" defer></script>
+    </head>
+    <body id="home" class="blog-post" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+        <header class="blog-post" style="background-image: url('blog/heading.png')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-10 col-xl-8">
+                        <div class="post-heading mb-4"></div>
+                        <p class="article-tag"></p>
+                        <br/>
+                        <span class="meta"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="article-container col-md-10 col-lg-10 col-xl-8"></div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get article ID from URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const articleId = urlParams.get('article');
+                const lang = getLanguageFromUrl();
+                if (articleId) {
+                    loadArticle(articleId, lang);
+                } else {
+                    console.error('No article ID found in the URL');
+                }
+            });
+        </script>
+    </body>
+</html>

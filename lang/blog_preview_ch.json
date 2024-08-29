@@ -1,0 +1,68 @@
+{
+  "press": [
+    {
+      "id": 1,
+      "tag": "科學聯盟",
+      "date": "2024年5月31日",
+      "category": "press",
+      "title": "科學屬於每個人：利用AI和XR技術推動全民運動",
+      "author": "科學聯盟",
+      "image": "blog/press-2.png",
+      "content": "Tica Lin最近在哈佛大學獲得了計算機科學的博士學位。她在哈佛視覺計算組的工作重點是沉浸式分析、運動XR和人機互動，特別是在開發適用於現實動態環境的XR視覺化和互動技術。",
+      "blockquote": "為了增強觀眾觀看比賽的體驗，我們的實驗室設計了嵌入式視覺化技術，將數據帶到籃球迷的身邊，以進行比賽分析。",
+      "link": "https://www.sciencecoalition.org/2024/05/31/science-is-everyone-bringing-sports-to-all-with-ai-and-xr-tech/"
+    },
+    {
+      "id": 2,
+      "tag": "哈佛工程與應用科學學院",
+      "date": "2024年2月15日",
+      "category": "press",
+      "title": "從比賽畫面到精采畫面：視覺計算組推出SportsBuddy亮點計劃",
+      "author": "By Matt Goisman",
+      "image": "blog/press-1.gif",
+      "content": "\"如果軟體能自動聚焦於關鍵球員，籃球畫面會變得多麼酷？如果箭頭能在球員實際移動前指示動作，理解戰術會變得多麼容易？\"",
+      "blockquote": "歸因於SportsBuddy，這些功能現在都變得可能了。",
+      "link": "https://seas.harvard.edu/news/2024/02/game-footage-great-footage"
+    }
+  ],
+  "articles": [
+    {
+      "id": 5,
+      "tag": "影響者",
+      "date": "2024年8月19日",
+      "category": "article",
+      "title": "YouTube 影片敘事的力量：運動內容創作者的革新者",
+      "author": "By SportsBuddy",
+      "image": "blog/blog1-Creator.png",
+      "content": "每分鐘上傳超過500小時的視頻，並且每天有數十億用戶觀看，YouTube為運動內容創作者提供了一個黃金機會。發現即使是微型和納米影響者也在將他們的熱情轉化為利潤，並學習如何使用SportsBuddy Studio來幫助您創建具有吸引力和盈利能力的專業視頻。",
+      "blockquote": "深入了解我們的最新文章，開始建立您的運動帝國吧！",
+      "articleID": "article_youtube"
+    }
+  ],
+  "caseStudies": [
+    {
+      "id": 4,
+      "tag": "社群影響者",
+      "date": "2024年7月25日",
+      "category": "case-study",
+      "title": "運動內容創作再升級：運用 SportsBuddy.ai 增強社群影響力",
+      "author": "By SportsBuddy",
+      "image": "blog/influencer-thumbnail.png",
+      "content": "自從我們的演示發布以來，SportsBuddy.ai 通過自動化繁瑣的過程並提供先進的編輯功能，大大提高了影響者的內容創作效率和質量。",
+      "blockquote": "這讓影響者能夠專注於提供有洞察力和吸引人的內容。我們與影響者的合作產生了14個視頻，<b>累積了504K的播放量和超過10K的互動</b>，展示了運動迷對吸引人視頻內容的強烈需求。",
+      "articleID": "case_influencer"
+    },
+    {
+      "id": 3,
+      "tag": "球隊行銷",
+      "date": "2024年7月16日",
+      "category": "case-study",
+      "title": "哈佛男子籃球隊：利用SportsBuddy.ai將比賽片段轉化為引人入勝的亮點",
+      "author": "By SportsBuddy",
+      "image": "blog/hmbb-thumbnail.png",
+      "content": "在2023-24賽季NCAA籃球賽期間，SportsBuddy.ai 與哈佛大學體育傳播合作，通過引人入勝的運動故事講述來提升粉絲體驗和團隊報導。",
+      "blockquote": "通過我們的先進視頻圖形和敘述強調比賽，SportsBuddy.ai提升了球員的信心，並吸引了廣泛的社區成員和觀眾，<b>達成了112K以上的曝光量和1.1K以上的互動</b>。",
+      "articleID": "case_harvard"
+    }
+  ]
+}

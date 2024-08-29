@@ -1,0 +1,68 @@
+{
+  "press": [
+    {
+      "id": 1,
+      "tag": "The Science Coalition",
+      "date": "May 31, 2024",
+      "category": "press",
+      "title": "Science is Everyone: Bringing Sports to All with AI and XR Tech",
+      "author": "By Coalition Blog",
+      "image": "blog/press-2.png",
+      "content": "Dr. Tica Lin recently earned her PhD in computer science at Harvard University. Her work with the Harvard Visual Computing Group focuses on Immersive Analytics, SportsXR, and Human-AI Interaction, particularly in developing XR visualization and interaction for real-life dynamic environments.",
+      "blockquote": "...To augment audiences' game-viewing experiences with rich data, our lab designed embedded visualizations in videos to bring data closer to basketball fans for game analysis.",
+      "link": "https://www.sciencecoalition.org/2024/05/31/science-is-everyone-bringing-sports-to-all-with-ai-and-xr-tech/"
+    },
+    {
+      "id": 2,
+      "tag": "Harvard SEAS",
+      "date": "February 15, 2024",
+      "category": "press",
+      "title": "From game footage to great footage: Visual Computing Group debuts SportsBuddy highlight program",
+      "author": "By Matt Goisman",
+      "image": "blog/press-1.gif",
+      "content": "\"How much cooler would basketball footage be if software could automatically shine a spotlight on key players? How much easier would it be to understand plays if arrows could indicate movement before the players actually move?\"",
+      "blockquote": "All of these features are now possible thanks to SportsBuddy.",
+      "link": "https://seas.harvard.edu/news/2024/02/game-footage-great-footage"
+    }
+  ],
+  "articles": [
+    {
+      "id": 5,
+      "tag": "Influencer",
+      "date": "August 19, 2024",
+      "category": "article",
+      "title": "The Power of Video Storytelling on YouTube: A Game-Changer for Sports Content Creators",
+      "author": "By SportsBuddy",
+      "image": "blog/blog1-Creator.png",
+      "content": "With over 500 hours of video uploaded every minute and billions of users watching daily, YouTube offers a golden opportunity for sports content creators. Discover how even micro and nano influencers are turning their passion into profit, and learn how SportsBuddy Studio can help you create professional-quality videos that captivate and earn.",
+      "blockquote": "Dive into our latest article and start building your sports empire today!",
+      "articleID": "article_youtube"
+    }
+  ],
+  "caseStudies": [
+    {
+      "id": 4,
+      "tag": "Influencer",
+      "date": "July 25, 2024",
+      "category": "case-study",
+      "title": "Elevating Sports Content Creation for Influencers with SportsBuddy.ai",
+      "author": "By SportsBuddy",
+      "image": "blog/influencer-thumbnail.png",
+      "content": "Since the launch of our demo, SportsBuddy.ai has significantly enhanced content creation efficiency and quality for influencers by automating tedious processes and offering advanced editing features.",
+      "blockquote": "This allows influencers to focus on delivering insightful and engaging content. Our collaboration with influencers has resulted in 14 videos, <b>amassing 504K plays and over 10K interactions</b>, showcasing the strong desire for engaging video content from sports fans.",
+      "articleID": "case_influencer"
+    },
+    {
+      "id": 3,
+      "tag": "Team Marketing",
+      "date": "July 16, 2024",
+      "category": "case-study",
+      "title": "Harvard Men’s Basketball: Transforming Game Footage into Engaging Highlights with SportsBuddy.ai",
+      "author": "By SportsBuddy",
+      "image": "blog/hmbb-thumbnail.png",
+      "content": "During the 2023-24 NCAA basketball season, SportsBuddy.ai collaborated with Harvard Athletic Communications to enhance fan experiences and team coverage through compelling sports storytelling.",
+      "blockquote": "By highlighting plays with our advanced video graphics and narratives, SportsBuddy.ai boosts player confidence and appeals to a wide range of community members and audiences, resulting in <b>over 112K impressions and over 1.1K engagements</b>.",
+      "articleID": "case_harvard"
+    }
+  ]
+}

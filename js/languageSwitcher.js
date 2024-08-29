@@ -119,10 +119,10 @@ function handleHashLinks() {
     });
 }
 
-
 // Initialize the language and hash links when the page loads
 document.addEventListener('DOMContentLoaded', function() {
     const lang = getLanguageFromUrl();
     loadLanguageContent(lang);
-    handleHashLinks();  // Attach hash link handlers
+    
+    // handleHashLinks();  // Attach hash link handlers
 });
