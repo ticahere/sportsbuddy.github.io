@@ -32,7 +32,7 @@
       "date": "August 19, 2024",
       "category": "article",
       "title": "The Power of Video Storytelling on YouTube: A Game-Changer for Sports Content Creators",
-      "author": "By SportsBuddy",
+      "author": "By SportsBuddy.ai",
       "image": "blog/blog1-Creator.png",
       "content": "With over 500 hours of video uploaded every minute and billions of users watching daily, YouTube offers a golden opportunity for sports content creators. Discover how even micro and nano influencers are turning their passion into profit, and learn how SportsBuddy Studio can help you create professional-quality videos that captivate and earn.",
       "blockquote": "Dive into our latest article and start building your sports empire today!",
@@ -46,7 +46,7 @@
       "date": "July 25, 2024",
       "category": "case-study",
       "title": "Elevating Sports Content Creation for Influencers with SportsBuddy.ai",
-      "author": "By SportsBuddy",
+      "author": "By SportsBuddy.ai",
       "image": "blog/influencer-thumbnail.png",
       "content": "Since the launch of our demo, SportsBuddy.ai has significantly enhanced content creation efficiency and quality for influencers by automating tedious processes and offering advanced editing features.",
       "blockquote": "This allows influencers to focus on delivering insightful and engaging content. Our collaboration with influencers has resulted in 14 videos, <b>amassing 504K plays and over 10K interactions</b>, showcasing the strong desire for engaging video content from sports fans.",
@@ -58,11 +58,22 @@
       "date": "July 16, 2024",
       "category": "case-study",
       "title": "Harvard Men’s Basketball: Transforming Game Footage into Engaging Highlights with SportsBuddy.ai",
-      "author": "By SportsBuddy",
+      "author": "By SportsBudd.ai",
       "image": "blog/hmbb-thumbnail.png",
       "content": "During the 2023-24 NCAA basketball season, SportsBuddy.ai collaborated with Harvard Athletic Communications to enhance fan experiences and team coverage through compelling sports storytelling.",
       "blockquote": "By highlighting plays with our advanced video graphics and narratives, SportsBuddy.ai boosts player confidence and appeals to a wide range of community members and audiences, resulting in <b>over 112K impressions and over 1.1K engagements</b>.",
       "articleID": "case_harvard"
+    },
+    {
+      "id": 6,
+      "tag": "League and Tournament",
+      "date": "September 11, 2024",
+      "category": "case-study",
+      "title": "Fo Guang Cup: Enhancing Basketball Tournament Highlights with SportsBuddy.ai",
+      "author": "By SportsBuddy.ai",
+      "image": "images/fo_guang_1.png",
+      "content": "SportsBuddy.ai partnered with the Fo Guang Cup basketball tournament to simplify the creation of professional-grade highlight videos using AI-powered tools. By producing 10 dynamic highlight reels with player tracking and game analysis, SportsBuddy.ai helped the tournament generate over 28K views and reach 10K accounts, significantly increasing its visibility and audience engagement.",
+      "articleID": "case_foguang"
     }
   ]
 }
