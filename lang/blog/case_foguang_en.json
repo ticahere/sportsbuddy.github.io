@@ -1,64 +1,63 @@
 {
-    "title": "SportsBuddy Case Study - Fo Guang Cup",
-    "header": {
-      "background_image": "blog/heading.png",
-      "heading": {
-        "part1": "F",
-        "part2": "o Guang Cup:<br/> ",
-        "part3": "Enhancing Basketball Tournament Highlights with SportsBuddy.ai"
+  "title": "SportsBuddy Case Study - Fo Guang Cup",
+  "header": {
+    "background_image": "blog/heading.png",
+    "heading": {
+      "part1": "F",
+      "part2": "o Guang Cup:<br/> ",
+      "part3": "Enhancing Basketball Tournament Highlights with SportsBuddy.ai"
+    },
+    "tags": ["League and Tournament"],
+    "date": "September 11, 2024"
+  },
+  "content": {
+    "intro": "The Fo Guang Cup is a prestigious international basketball tournament, attracting university teams from across the globe to compete at a high level. Held annually in Taiwan, the 2024 edition of the tournament featured teams from regions such as Australia, Japan, Malaysia, the Philippines, and the United States. Beyond the fierce competition, the Fo Guang Cup also serves as a platform for cultural exchange and global unity, showcasing the unifying power of sports.",
+    "sections": [
+      {
+        "heading": "Problem",
+        "paragraphs": [
+          "<br/> Despite the excitement and talent on display at the Fo Guang Cup, the tournament faced challenges in effectively capturing and promoting the high-level performances of its participating teams. Traditional video editing tools are often too complex, time-consuming, and require specialized skills that many teams and leagues do not possess. As a result, the league struggled to provide compelling highlight reels that could increase audience engagement, showcase player talent, and offer deeper insights into the games. The absence of high-quality, easily shareable content limited the tournament’s ability to extend its reach and maximize its impact."
+        ]
       },
-      "tags": ["League and Tournament"],
-      "date": "July 16, 2024"
-    },
-    "content": {
-      "intro": "The Fo Guang Cup is a prestigious international basketball tournament, attracting university teams from across the globe to compete at a high level. Held annually in Taiwan, the 2024 edition of the tournament featured teams from regions such as Australia, Japan, Malaysia, the Philippines, and the United States. Beyond the fierce competition, the Fo Guang Cup also serves as a platform for cultural exchange and global unity, showcasing the unifying power of sports.",
-      "sections": [
-        {
-          "heading": "Problem",
-          "paragraphs": [
-            "<br/> Despite the excitement and talent on display at the Fo Guang Cup, the tournament faced challenges in effectively capturing and promoting the high-level performances of its participating teams. Traditional video editing tools are often too complex, time-consuming, and require specialized skills that many teams and leagues do not possess. As a result, the league struggled to provide compelling highlight reels that could increase audience engagement, showcase player talent, and offer deeper insights into the games. The absence of high-quality, easily shareable content limited the tournament’s ability to extend its reach and maximize its impact."
-          ]
-        },
-        {
-          "heading": "Solution",
-          "paragraphs": [
-            "<br/> SportsBuddy.ai partnered directly with the Fo Guang Cup to address these challenges at the league level. By leveraging our AI-powered platform, we streamlined the creation of professional-grade highlight videos for the tournament. Instead of relying on individual teams, the league itself was empowered to capture key moments and produce visually dynamic, engaging highlight reels. Our technology provided automatic player tracking, spotlighting, and detailed game breakdowns, turning raw footage into compelling narratives that captured the intensity and skill of the tournament.",
-            "Throughout the competition, SportsBuddy.ai worked with the Fo Guang Cup to produce ten high-quality highlight videos. These videos, filled with expert visual effects and insightful game analysis, became valuable assets for promoting the league’s brand, engaging its fanbase, and showcasing the best performances of the tournament."
-          ],
-          "blockquote": "SportsBuddy.ai partnered with the Fo Guang Cup, a prestigious international basketball tournament, to transform their basketball footage into professional-quality highlights using AI-driven technology.",
-          "video": {
-            "src": "videos/SB-FGU-Highlights-comp.mp4",
-            "caption": "<br/> Fo Guang University Women's Basketball team's runner-up finish at the Fo Guang Cup, captured by SportsBuddy.ai, showcasing standout defense and dynamic offense."
-          }
-        },
-        {
-          "heading": "Impact",
-          "paragraphs": [
-            "<br/> The ten videos created in collaboration with the Fo Guang Cup generated significant engagement, attracting over 28K views and reaching 10K accounts. This partnership not only elevated the visibility of the tournament but also demonstrated how AI-driven sports storytelling can enhance the overall experience for fans and stakeholders. By providing professional-quality content for the entire league, SportsBuddy.ai helped the Fo Guang Cup reach a broader audience, increase fan interaction, and highlight the exceptional talent of the participating teams on a global scale."
-          ],
-          "blockquote": "Featuring teams from Japan, Malaysia, and the U.S., Fo Guang Cup and SportsBuddy.ai created 10 AI-enhanced highlight videos, earning 28K views and reaching 10K accounts, significantly boosting the tournament's visibility and global engagement.",
-          "video": {
-             "src": "videos/SB-UT-Highlights-comp.mp4",
-             "caption": "<br/> University of Tsukuba men's basketball team's disciplined offense and rock-solid defense, captured by SportsBuddy.ai, showcase their tactical prowess on the court."
-           }
-        },
-        {
-          "heading": "",
-          "paragraphs": [
-            "See more Fo Guang Cup's Basketball video highlights created by SportsBuddy.ai on our <a href=\"https://www.instagram.com/sportsbuddyai\" target=\"_blank\">Instagram</a>.</p>"
-          ]
-        },
-        {
-          "heading": "Call to action",
-          "paragraphs": [
-            "<br/> SportsBuddy.ai is committed to helping sports leagues and tournaments create top-tier video content that captivates audiences and increases visibility. We invite other sports organizations to explore partnership opportunities with us to enhance their sports storytelling and drive fan engagement. Contact SportsBuddy.ai today to learn how we can help turn your game highlights into compelling narratives that resonate with a wider audience."
-          ]
+      {
+        "heading": "Solution",
+        "paragraphs": [
+          "<br/> SportsBuddy.ai partnered directly with the Fo Guang Cup to address these challenges at the league level. By leveraging our AI-powered platform, we streamlined the creation of professional-grade highlight videos for the tournament. Instead of relying on individual teams, the league itself was empowered to capture key moments and produce visually dynamic, engaging highlight reels. Our technology provided automatic player tracking, spotlighting, and detailed game breakdowns, turning raw footage into compelling narratives that captured the intensity and skill of the tournament.",
+          "Throughout the competition, SportsBuddy.ai worked with the Fo Guang Cup to produce ten high-quality highlight videos. These videos, filled with expert visual effects and insightful game analysis, became valuable assets for promoting the league’s brand, engaging its fanbase, and showcasing the best performances of the tournament."
+        ],
+        "blockquote": "SportsBuddy.ai partnered with the Fo Guang Cup, a prestigious international basketball tournament, to transform their basketball footage into professional-quality highlights using AI-driven technology.",
+        "video": {
+          "src": "videos/SB-FGU-Highlights-comp.mp4",
+          "caption": "<br/> Fo Guang University Women's Basketball team's runner-up finish at the Fo Guang Cup, captured by SportsBuddy.ai, showcasing standout defense and dynamic offense."
         }
-      ]
-    },
-    "social": {
-      "postURL": "https://sportsbuddy.ai/article.html?article=case_foguang&lang=en",
-      "postTitle": "Case study: Enhancing Fo Guang Cup Basketball Tournament Highlights with SportsBuddy.ai. Read full story at "
-    }
+      },
+      {
+        "heading": "Impact",
+        "paragraphs": [
+          "<br/> The ten videos created in collaboration with the Fo Guang Cup generated significant engagement, attracting over 28K views and reaching 10K accounts. This partnership not only elevated the visibility of the tournament but also demonstrated how AI-driven sports storytelling can enhance the overall experience for fans and stakeholders. By providing professional-quality content for the entire league, SportsBuddy.ai helped the Fo Guang Cup reach a broader audience, increase fan interaction, and highlight the exceptional talent of the participating teams on a global scale."
+        ],
+        "blockquote": "Featuring teams from Japan, Malaysia, and the U.S., Fo Guang Cup and SportsBuddy.ai created 10 AI-enhanced highlight videos, earning 28K views and reaching 10K accounts, significantly boosting the tournament's visibility and global engagement.",
+        "video": {
+          "src": "videos/SB-UT-Highlights-comp.mp4",
+          "caption": "<br/> University of Tsukuba men's basketball team's disciplined offense and rock-solid defense, captured by SportsBuddy.ai, showcase their tactical prowess on the court."
+        }
+      },
+      {
+        "heading": "",
+        "paragraphs": [
+          "See more Fo Guang Cup's Basketball video highlights created by SportsBuddy.ai on our <a href=\"https://www.instagram.com/sportsbuddyai\" target=\"_blank\">Instagram</a>.</p>"
+        ]
+      },
+      {
+        "heading": "Call to action",
+        "paragraphs": [
+          "<br/> SportsBuddy.ai is committed to helping sports leagues and tournaments create top-tier video content that captivates audiences and increases visibility. We invite other sports organizations to explore partnership opportunities with us to enhance their sports storytelling and drive fan engagement. Contact SportsBuddy.ai today to learn how we can help turn your game highlights into compelling narratives that resonate with a wider audience."
+        ]
+      }
+    ]
+  },
+  "social": {
+    "postURL": "https://sportsbuddy.ai/article.html?article=case_foguang&lang=en",
+    "postTitle": "Case study: Enhancing Fo Guang Cup Basketball Tournament Highlights with SportsBuddy.ai. Read full story at "
   }
-  
+}
