@@ -74,6 +74,17 @@
       "image": "images/fo_guang_1.png",
       "content": "SportsBuddy.ai與佛光杯大學籃球賽合作，利用AI技術解決了傳統視頻編輯耗時且複雜的難題。通過自動捕捉比賽亮點並生成專業級的精彩影片，SportsBuddy.ai助力佛光杯提升比賽的推廣與球迷的參與感。在此次合作中，我們製作了十部影片集錦，總觀看次數達到28,000次，觸及超過10,000個帳號，顯著提升了賽事的知名度和全球影響力。這次成功展示了AI技術在體育內容創作中的潛力，並幫助佛光杯在全球舞台上展現了參賽隊伍的實力。",
       "articleID": "case_foguang"
-    }
+    },
+    {
+      "id": 7,
+      "tag": "科技創新",
+      "date": "2024年9月25日",
+      "category": "article",
+      "title": "革新體育精彩瞬間：SportsBuddy.ai 推出 AI 驅動字幕技術",
+      "author": "by SportsBuddy.ai",
+      "image": "images/AI_captioning.png",
+      "content": "SportsBuddy.ai 透過全新推出的 AI 驅動字幕功能，滿足了用戶對快速且詳細體育精彩集錦的日益增長的需求。該工具能夠自動生成動態且精準的字幕，同時也支援手動調整。用戶可以使用個性化的字體和顏色來定制字幕，以匹配品牌形象，從而簡化編輯流程並提升內容質量。透過自動化字幕生成，SportsBuddy.ai 節省了寶貴的時間，使高品質的體育精彩集錦更加輕鬆獲取，幫助創作者輕鬆打造引人入勝的故事內容。這一創新為體育內容創作樹立了新標準，徹底改變了體育故事的呈現方式。",
+      "articleID": "article_aicaptioning"
+}
   ]
 }

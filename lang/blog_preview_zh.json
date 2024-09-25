@@ -74,6 +74,17 @@
       "image": "images/fo_guang_1.png",
       "content": "佛光杯是一项国际篮球赛事，吸引了来自台湾、澳大利亚、日本、马来西亚、菲律宾和美国等地区的顶尖大学球队参加。SportsBuddy.ai与佛光杯合作，利用AI技术自动追踪球员、捕捉关键时刻，并生成高质量的视频集锦。通过这次合作，SportsBuddy.ai为佛光杯制作了十部精彩视频，获得超过28,000次观看，并触及10,000个账号，显著提升了赛事的知名度和全球影响力。",
       "articleID": "case_foguang"
+    },
+    {
+      "id": 7,
+      "tag": "科技创新",
+      "date": "2024年9月25日",
+      "category": "article",
+      "title": "革新体育精彩瞬间：SportsBuddy.ai推出AI驱动字幕技术",
+      "author": "by SportsBuddy.ai",
+      "image": "images/AI_captioning.png",
+      "content": "SportsBuddy.ai 通过全新推出的 AI 驱动字幕功能，满足了用户对快速且详细体育精彩集锦的日益增长的需求。该工具能够自动生成动态且精准的字幕，同时也支持手动调整。用户可以使用个性化的字体和颜色来定制字幕，以匹配品牌形象，从而简化编辑流程并提升内容质量。通过自动化字幕生成，SportsBuddy.ai 节省了宝贵的时间，使高质量的体育精彩集锦更加轻松获取，帮助创作者轻松打造引人入胜的故事内容。这一创新为体育内容创作设立了新标准，彻底改变了体育故事的呈现方式。",
+      "articleID": "article_aicaptioning"
     }
   ]
 }
