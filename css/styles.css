@@ -11250,6 +11250,7 @@ body {
 .footer {
   padding: 5rem 0;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0.8) 100%);
+  
 }
 /* customized css for UI components */
 .arrow-btn {
